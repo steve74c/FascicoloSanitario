@@ -1,0 +1,10 @@
+
+Libreie da installare
+
+npm i directory-tree
+npm install winston
+npm i nodejs-base64-converter
+npm i get-windows-shortcut-properties
+npm i cors
+
+

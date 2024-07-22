@@ -1,0 +1,69 @@
+[
+  {
+      "nome": "material2",
+      "type": "folder",
+      "children": [
+          {
+              "nome": "src",
+              "type": "folder",
+              "children": [
+                  {
+                      "nome": "cdk",
+                      "children": [
+                          {
+                              "nome": "package.json",
+                              "type": "file"
+                          },
+                          {
+                              "nome": "BUILD.bazel",
+                              "type": "file"
+                          }
+                      ]
+                  },
+                  {
+                      "nome": "lib",
+                      "type": "folder"
+                  }
+              ]
+          }
+      ]
+  },
+  {
+      "nome": "angular",
+      "type": "folder",
+      "children": [
+          {
+              "nome": "packages",
+              "type": "folder",
+              "children": [
+                  {
+                      "nome": ".travis.yml",
+                      "type": "file"
+                  },
+                  {
+                      "nome": "firebase.json",
+                      "type": "file"
+                  }
+              ]
+          },
+          {
+              "nome": "package.json",
+              "type": "file"
+          }
+      ]
+  },
+  {
+      "nome": "angularjs",
+      "type": "folder",
+      "children": [
+          {
+              "nome": "gulpfile.js",
+              "type": "file"
+          },
+          {
+              "nome": "README.md",
+              "type": "file"
+          }
+      ]
+  }
+]

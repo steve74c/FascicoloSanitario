@@ -1,0 +1,14 @@
+<ngxt-treecontrol [treeData]="treeData">
+  <ng-template let-item>
+    <span class="expand-collapse nowrap"  (click)="toggleTreeItem(item)" *ngIf="item.children?.length>0">
+      @if (item.expanded) { <i  class="bi bi-folder-minus"></i> }
+      @if (!item.expanded) { <i  class="bi bi-folder-plus"></i> }
+    </span>
+    <span class="nowrap">
+
+      <i *ngIf="!item.children?.length" class="bi bi-filetype-pdf"></i>   
+      {{ item.display }}
+    </span>
+
+  </ng-template>
+</ngxt-treecontrol>

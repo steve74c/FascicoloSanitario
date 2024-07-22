@@ -1,0 +1,29 @@
+.flex-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-item{
+  height: 700px;
+  border: 1px solid black;
+  overflow: auto;
+}
+
+.flex-item-left{
+    width: 300px;
+}
+
+.flex-item-right{
+  width: 100%;
+}
+
+.grabber{
+  width:5px;
+}
+.grabber:hover{
+  cursor:e-resize;
+}
+
+.side-panel{
+  background-color: lightgray;  
+}

@@ -1,0 +1,23 @@
+@import 'bootstrap-icons/font/bootstrap-icons.min.css';
+
+.expand-collapse {
+  cursor: pointer;
+}
+
+
+.bi-folder-minus {
+  color: rgb(182, 95, 24); 
+}
+
+.bi-folder-plus {
+  color: rgb(152, 162, 9); 
+}
+
+.bi-filetype-pdf {
+  color: rgb(227, 36, 15); 
+}
+
+
+span.nowrap {
+  white-space: nowrap;
+}

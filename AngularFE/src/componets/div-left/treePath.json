@@ -1,0 +1,69 @@
+[
+    {
+      "display": "Anno",
+      "value": "1",
+      "children": [
+        {
+          "display": "Formals",
+          "value": "2",
+          "children": [
+            {
+              "display": "Trousers",
+              "value": "3"
+            },
+            {
+              "display": "Shirts",
+              "value": "7",
+              "children": [
+                {
+                  "display": "Checkeredaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                  "value": "88"
+                },
+                {
+                  "display": "Striped",
+                  "value": "89"
+                },
+                {
+                  "display": "Plain",
+                  "value": "90"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "display": "Casuals",
+          "value": "4",
+          "children": [
+            {
+              "display": "Shorts",
+              "value": "8"
+            },
+
+            {
+              "display": "T-shirts",
+              "value": "9"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "display": "Visite",
+      "value": "21",
+      "children": [
+        {
+          "display": "Casual Shoes",
+          "value": "22"
+        },
+        {
+          "display": "Sport Shoes",
+          "value": "23"
+        },
+        {
+          "display": "Slippers",
+          "value": "24"
+        }
+      ]
+    }
+  ]
