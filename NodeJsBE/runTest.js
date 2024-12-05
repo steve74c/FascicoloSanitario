@@ -1,5 +1,6 @@
 const ctrlFile = require('./controller/controllerShellFile');
 const ctrlBs64 = require('./controller/controllerBase64');
+const logger = require("./logger");
 var cfg = require('./config/config.json');
 
 
@@ -23,6 +24,10 @@ function test03() {
   console.log(cfg.home_path);
 }
 
+function test04() {
+  logger.log({                  level: 'error',  message: 'Public error to share'});
+  logger.log({  private: true,  level: 'error',  message: 'This is super secret - hide it.'});
+}
 
 const readline = require('readline').createInterface({
   input: process.stdin,
@@ -34,6 +39,7 @@ readline.question('Seleziona test?  ' +
                   '\n 1) Test 01: Visualizza ad albero delle directory presenti su hd ' +
                   '\n 2) Test 02: converte file (in questo caso pdf) in base64 ' +
                   '\n 3) Test 03: read config file  ' +
+                  '\n 4) Test 04: Log  ' +                  
                   ' \n -> Selezione : ', test => {
   console.log(`\nTest selezionato ${test}!`);
   readline.close();
@@ -50,6 +56,9 @@ readline.question('Seleziona test?  ' +
       break;
     case '3':
       test03();
+      break;
+    case '4':
+      test04();
       break;
     default:
       console.log(`Test non presente!`);

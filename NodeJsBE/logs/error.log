@@ -1,0 +1,13 @@
+{
+  level: 'error',
+  message: 'Public error to share',
+  label: 'winston custom format',
+  timestamp: 'Dec-05-2024 23:44:27'
+}
+{
+  private: true,
+  level: 'error',
+  message: 'This is super secret - hide it.',
+  label: 'winston custom format',
+  timestamp: 'Dec-05-2024 23:44:27'
+}

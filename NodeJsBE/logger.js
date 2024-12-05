@@ -13,13 +13,8 @@ const logger = createLogger({
     prettyPrint()
   ),
   transports: [
-    new transports.File({
-      filename: "logs/example.log",
-    }),
-    new transports.File({
-      level: "error",
-      filename: "logs/error.log",
-    }),
+    new transports.File({  filename: "logs/example.log",  }),
+    new transports.File({     level: "error", filename: "logs/error.log",   }),
     new transports.Console(),
   ],
 });

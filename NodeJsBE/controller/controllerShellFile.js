@@ -1,13 +1,9 @@
-const dree = require('dree');
-const dirTree = require("directory-tree");
-
-
-/* ----------------------------------------------------
+/*----------------------------------------------------
     Legge i file dalla directory e 
     riporta un json con le info di ogni file
-   ----------------------------------------------------*/
-
-
+  -------------------------------------------------------*/
+const logger = require("./logger");
+const dree = require('dree');
 
 const options = {
     stat: false,
@@ -42,6 +38,14 @@ const options = {
     console.dir(object, {depth: null, colors: true})
   }
 
+
+
+exports.listDirFile = ( req,res) => {
+    const { filename } = req.body;
+	res.send(getListDirFile(filename))
+            .then( () => {})
+            .catch(error => {  logger.      });
+}
 
 
   
