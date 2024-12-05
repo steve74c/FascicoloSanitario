@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <body>
-{{this.item}}
+  
+  <button  (click)="changeFile()" >change</button>
   <ngx-extended-pdf-viewer
-      [src]="'assets/PA_Stefano_Calderone_Fronte.pdf'">
+      [src]="this.pdfFile">
   </ngx-extended-pdf-viewer>
 </body>
 </html>

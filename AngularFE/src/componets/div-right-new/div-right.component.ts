@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, SimpleChanges } from '@angular/core';
 import { MyTreeItemNew } from '../../interfaces/my-tree-item-new';
 import { PdfService } from 'src/services/pdf/pdf.service';
 //import { pdfDefaultOptions } from 'ngx-extended-pdf-viewer';
@@ -14,16 +14,36 @@ export class DivRightNewComponent {
   @Input()
   item!: MyTreeItemNew;
   pdfData:Promise<ArrayBuffer> | undefined;
+  pdfFile: string = "assets/PA_Stefano_Calderone_Fronte.pdf";
+
   
   
   constructor(private pdfService: PdfService) {}
 
   async ngOnInit() {
-    this.pdfData = await this.pdfService.getPDF(this.item);
-    console.log(this.pdfData);
   }
 
-  src = 'https://vadimdez.github.io/ng2-pdf-viewer/assets/pdf-test.pdf';
+
+  // ngOnChanges viene chiamato ogni volta che inputValue cambia
+  ngOnChanges(changes: SimpleChanges): void {
+
+    if (changes['item']) {
+      console.log('item:', JSON.stringify(this.item));
+    }
+  } 
+
+  async getFileByServer()  {
+
+    console.log("Server");
+    this.pdfData = await this.pdfService.getPDF(this.item);
+  }
+  
+  changeFile()  {
+    console.log("CHANGEs");
+    this.pdfFile = "assets/img002.pdf";
+
+  }
+  
   
   
 }

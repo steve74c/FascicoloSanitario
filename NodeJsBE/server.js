@@ -1,20 +1,18 @@
 const express = require('express')
 const routes = require('./routes');
+
+// Costanti
+const PORT = process.env.PORT || 5000
+
+//  Gestione CORS
 var cors = require('cors')
-
-
-
-const app = express()
-
 const corsOptions = {
   origin: '*'
 };
 
+// app express
+const app = express()
 app.use(cors(corsOptions));
-
-const PORT = process.env.PORT || 5000
-//const PORT = 5000
-
 app.use(routes)
 
 app.listen(PORT, () => {

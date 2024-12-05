@@ -1,13 +1,4 @@
-[{
-  "name":"FascicoloSanitario",
-  "path":"D:/Documenti/Visite/Papa/FascicoloSanitario",
-  "relativePath":".",
-  "type":"directory",
-  "expanded":false,
-  "sizeInBytes":119907510,
-  "size":"119.91 MB",
-  "hash":"0b8847fd6cc72c574b735265518608f0",
-  "children":[
+[
      {
         "name":"Anno",
         "path":"D:/Documenti/Visite/Papa/FascicoloSanitario/Anno",
@@ -2114,4 +2105,3 @@
         ]
      }
   ]
-}]

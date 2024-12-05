@@ -8,8 +8,11 @@
 /AngularFE//bazel-out
 
 # dependencies
+AngularFE/.angular/
 /AngularFE//node_modules
+AngularFE/node_modules/
 /NodeJsBE//node_modules
+NodeJsBE/node_modules/
 
 # profiling files
 chrome-profiler-events*.json
