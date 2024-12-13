@@ -2,7 +2,7 @@
     Legge i file dalla directory e 
     riporta un json con le info di ogni file
   -------------------------------------------------------*/
-const logger = require("./logger");
+const logger = require("../logger");
 const dree = require('dree');
 
 const options = {
@@ -42,9 +42,23 @@ const options = {
 
 exports.listDirFile = ( req,res) => {
     const { filename } = req.body;
-	res.send(getListDirFile(filename))
+    logger.log('Body: ' + req.body )
+
+    const headerDict = {
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': 'GET,POST,OPTIONS,DELETE,PUT',
+      'Content-Type': 'application/json',
+      'Accept': 'application/json',
+      'Access-Control-Allow-Headers': 'Content-Type',
+    }
+    
+    const body = getListDirFile(filename);
+    const requestOptions = {                                                                                                                                                                                 
+      headers: new Headers(headerDict), 
+    };
+	res.send(body,requestOptions)
             .then( () => {})
-            .catch(error => {  logger.      });
+            .catch(error => {  logger.info("Errore: " + error)      });
 }
 
 

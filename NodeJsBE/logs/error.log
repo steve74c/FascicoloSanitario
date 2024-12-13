@@ -1,13 +1,2 @@
-{
-  level: 'error',
-  message: 'Public error to share',
-  label: 'winston custom format',
-  timestamp: 'Dec-05-2024 23:44:27'
-}
-{
-  private: true,
-  level: 'error',
-  message: 'This is super secret - hide it.',
-  label: 'winston custom format',
-  timestamp: 'Dec-05-2024 23:44:27'
-}
+[Dec-13-2024 11:51:20] error: bodySend is not defined
+[Dec-13-2024 11:53:10] error: bodySend is not defined

@@ -10,7 +10,10 @@ const logger = createLogger({
     timestamp({
       format: "MMM-DD-YYYY HH:mm:ss",
     }),
-    prettyPrint()
+    // contenuto dell'errore in formato json
+    //prettyPrint()  
+    // Esprime il contenuto dell'errore su una riga
+    printf((info) => `[${info.timestamp}] ${info.level}: ${info.message}`) 
   ),
   transports: [
     new transports.File({  filename: "logs/example.log",  }),

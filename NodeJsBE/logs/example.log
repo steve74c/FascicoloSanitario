@@ -1,13 +1,35 @@
-{
-  level: 'error',
-  message: 'Public error to share',
-  label: 'winston custom format',
-  timestamp: 'Dec-05-2024 23:44:27'
-}
-{
-  private: true,
-  level: 'error',
-  message: 'This is super secret - hide it.',
-  label: 'winston custom format',
-  timestamp: 'Dec-05-2024 23:44:27'
-}
+[Dec-13-2024 11:51:20] debug: /api/listDirFile
+[Dec-13-2024 11:53:10] debug: /api/listDirFile
+[Dec-13-2024 12:04:26] debug: /api/listDirFile
+[Dec-13-2024 12:07:04] debug: /api/listDirFile
+[Dec-13-2024 12:08:45] debug: /api/listDirFile
+[Dec-13-2024 12:10:46] debug: /api/listDirFile
+[Dec-13-2024 12:11:29] debug: /api/listDirFile
+[Dec-13-2024 12:11:40] debug: /api/listDirFile
+[Dec-13-2024 12:18:26] debug: /api/listDirFile
+[Dec-13-2024 12:22:11] debug: /api/listDirFile
+[Dec-13-2024 12:24:03] debug: /api/listDirFile
+[Dec-13-2024 12:24:37] debug: /api/listDirFile
+[Dec-13-2024 12:24:41] debug: /api/listDirFile
+[Dec-13-2024 12:25:05] debug: /api/listDirFile
+[Dec-13-2024 12:27:50] debug: /api/listDirFile
+[Dec-13-2024 12:27:50] debug: /api/listDirFile
+[Dec-13-2024 12:28:02] debug: /api/listDirFile
+[Dec-13-2024 12:28:02] debug: /api/listDirFile
+[Dec-13-2024 12:28:08] debug: /api/listDirFile
+[Dec-13-2024 12:28:22] debug: /api/listDirFile
+[Dec-13-2024 12:29:07] debug: /api/listDirFile
+[Dec-13-2024 12:29:09] debug: /api/listDirFile
+[Dec-13-2024 12:29:09] debug: /api/listDirFile
+[Dec-13-2024 12:29:14] debug: /api/listDirFile
+[Dec-13-2024 12:29:14] debug: /api/listDirFile
+[Dec-13-2024 22:45:06] debug: /api/listDirFile
+[Dec-13-2024 22:45:06] debug: /api/listDirFile
+[Dec-13-2024 22:45:53] debug: /api/listDirFile
+[Dec-13-2024 22:45:53] debug: /api/listDirFile
+[Dec-13-2024 22:53:41] debug: /api/listDirFile
+[Dec-13-2024 22:53:41] debug: /api/listDirFile
+[Dec-13-2024 22:53:41] debug: /api/listDirFile
+[Dec-13-2024 22:54:02] debug: /api/listDirFile
+[Dec-13-2024 22:54:03] debug: /api/listDirFile
+[Dec-13-2024 22:54:03] debug: /api/listDirFile
