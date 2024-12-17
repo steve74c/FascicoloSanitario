@@ -5,6 +5,17 @@
 const logger = require("../logger");
 const dree = require('dree');
 
+const headerDict = {
+  'Access-Control-Allow-Origin': '*',
+  'Access-Control-Allow-Methods': 'GET,POST,OPTIONS,DELETE,PUT',
+  'Content-Type': 'application/json',
+  'Accept': 'application/json',
+  'Access-Control-Allow-Headers': 'Content-Type',
+}
+const requestOptions = {                                                                                                                                                                                 
+  headers: new Headers(headerDict), 
+};
+
 const options = {
     stat: false,
     normalize: true,
@@ -27,7 +38,6 @@ const options = {
   // visualizza l'abero della direcotory
   // ----------------------------------------
   exports.getListDirTree = ( path)  => { return dree.parse(path, options); }
-  
 
   // ----------------------------------------
   // lista il contenuto di una cartella
@@ -38,39 +48,23 @@ const options = {
     console.dir(object, {depth: null, colors: true})
   }
 
-
-
-listDir = ( req,res, type) => {
+  // ----------------------------------------
+  // Invia il risultato delle lista dei file ricavato
+  // ----------------------------------------
+  listDir = ( req,res, runFn) => {
+    logger.log('Body: ' + req.body )    
     const { filename } = req.body;
-    logger.log('Body: ' + req.body )
+    const body = runFn(filename);
+  	res.send(body,requestOptions).then( () => {})
+                                 .catch(error => {  logger.info("Errore: " + error)      });
+  }
 
-    const headerDict = {
-      'Access-Control-Allow-Origin': '*',
-      'Access-Control-Allow-Methods': 'GET,POST,OPTIONS,DELETE,PUT',
-      'Content-Type': 'application/json',
-      'Accept': 'application/json',
-      'Access-Control-Allow-Headers': 'Content-Type',
-    }
-    
-    let body = '';
-    if (type =='F')
-      body = getListDirFile(filename);
-    else
-      body = getListDirTree(filename);
-    const requestOptions = {                                                                                                                                                                                 
-      headers: new Headers(headerDict), 
-    };
-	res.send(body,requestOptions).then( () => {})
-                               .catch(error => {  logger.info("Errore: " + error)      });
-}
-
-
-exports.listDirFile = ( req,res) => {
-  listDir( req,res,'F')
-}
+  exports.listDirFile = ( req,res) => {
+    listDir( req,res,getListDirFile)
+  }
   
-exports.listDirTree = ( req,res) => {
-  listDir( req,res,'T')
-}
+  exports.listDirTree = ( req,res) => {
+    listDir( req,res,getListDirTree)
+  }
   
  
