@@ -5,7 +5,7 @@ export interface MyTreeItemNew {
   relativePath: string,
   type: string,
   isSymbolicLink?:boolean;
-  expanded:boolean;
+  expanded?:boolean;
   extension?:string;
   sizeInBytes:number;
   size:string;
