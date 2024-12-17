@@ -40,7 +40,7 @@ const options = {
 
 
 
-exports.listDirFile = ( req,res) => {
+listDir = ( req,res, type) => {
     const { filename } = req.body;
     logger.log('Body: ' + req.body )
 
@@ -52,16 +52,25 @@ exports.listDirFile = ( req,res) => {
       'Access-Control-Allow-Headers': 'Content-Type',
     }
     
-    const body = getListDirFile(filename);
+    let body = '';
+    if (type =='F')
+      body = getListDirFile(filename);
+    else
+      body = getListDirTree(filename);
     const requestOptions = {                                                                                                                                                                                 
       headers: new Headers(headerDict), 
     };
-	res.send(body,requestOptions)
-            .then( () => {})
-            .catch(error => {  logger.info("Errore: " + error)      });
+	res.send(body,requestOptions).then( () => {})
+                               .catch(error => {  logger.info("Errore: " + error)      });
 }
 
 
+exports.listDirFile = ( req,res) => {
+  listDir( req,res,'F')
+}
   
+exports.listDirTree = ( req,res) => {
+  listDir( req,res,'T')
+}
   
  

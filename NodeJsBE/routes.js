@@ -12,6 +12,7 @@ router.get("/hello",  (request, response) => response.json({ message: "Hello fro
 
 router.get('/listfile', (request, response) => fnPath(request, response));
 
+
 /*
 router.post('/listDirFile', async (req, res) => {
     
@@ -65,6 +66,18 @@ router.get('/api/listDirFile', async (req, res) => {
         logger.log({ 'level': 'error',  'message': err.message});
         return res.status(500).send(err.message);
       }
+
+});
+
+router.get('/api/listDirTree', async (req, res) => {
+  logger.log({ 'level': 'debug',  'message': '/api/listDirTree'});
+  try {
+      let listDir =ctrlShFile.getListDirTree(cfg.home_path);
+      return res.status(200).send(listDir); 
+    } catch (err) {
+      logger.log({ 'level': 'error',  'message': err.message});
+      return res.status(500).send(err.message);
+    }
 
 });
 module.exports = router
