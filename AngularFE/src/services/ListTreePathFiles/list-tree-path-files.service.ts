@@ -12,17 +12,15 @@ export class ListTreePathFilesService {
 
   getListDirFile(): any {
     const headers = {  };
-    const body = {  };
-    return this.http.get<any>(config.serverURL+ 'api/listDirFile', body );
+    return this.http.get<any>(config.serverURL+ 'api/listDirFile', headers );
   
   }
 
 
   getListDirTree(): any {
     const headers = {  };
-    const body = {  };
     console.log( 'start getList');
-    return this.http.get<any>(config.serverURL+ 'api/listDirTree', body )
+    return this.http.get<any>(config.serverURL+ 'api/listDirTree', headers )
   
   }
 

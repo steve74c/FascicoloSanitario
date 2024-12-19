@@ -16,14 +16,16 @@ const corsOptions = {
 
 // app express
 const app = express()
+
+// queste 2 righe sono importanti per leggere il body
+app.use(express.urlencoded({ extended: true })); 
+app.use(express.json()); 
+
 app.use(cors(corsOptions));
-
-
 app.use(routes)
-app.get('/test', function(req, res){
-  res.send('id: ' + 'req.query.id');
-});
+
 app.listen(PORT, () => {
+  
   console.log(`Server listening at http://localhost:${PORT}`)
 })
 

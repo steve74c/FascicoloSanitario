@@ -2,19 +2,49 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { MyTreeItemNew } from 'src/interfaces/my-tree-item-new';
 import { Observable } from 'rxjs';
+import config from '../../config/config.json';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PdfService {
-  private pdfUrl = 'localhost:5000/pdf'; // Replace with your PDF URL
-
+ 
   constructor(private http: HttpClient) {}
 
-  getPDF(item: MyTreeItemNew): Promise<any> {
-    return this.http.post(this.pdfUrl, { responseType: 'string' }).toPromise();
+
+
+  getPDF(item: MyTreeItemNew):any {
+
+    const headers= {       headers: new HttpHeaders({ 'Content-Type': 'application/json',    }) }
+    const body = {'path' : item.path  };
+
+    return this.http.post(config.serverURL + 'pdf/fileNameB64', body, {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json', // Questo è importante!
+      }),
+    });
+    /*
+    .subscribe({
+      next: data => {
+          return data;
+      },
+      error: error => {
+          console.error('There was an error!', error);
+      }
+    });
+*/
+
   }
+      
+
   /*
+
+     return this.http.post(this.apiUrl, data, {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json',
+      }),
+    });
+
 
   getPdf1(item: MyTreeItemNew): any {
     //const headers: HttpHeaders = new HttpHeaders({responseType: 'blob' });

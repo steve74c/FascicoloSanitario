@@ -1,10 +1,10 @@
 
 const fs = require('fs');
-import { readFileSync, writeFileSync } from 'fs'
+
 
 // function to encode file data to base64 encoded string
 exports.base64_encode = (pathfile) => {
-        const contents = readFileSync(pathfile)
+        const contents = fs.readFileSync(pathfile)
         const base64data = Buffer.from(contents.toString(), 'base64')
         const json = JSON.stringify({base64: base64data});
         return json;

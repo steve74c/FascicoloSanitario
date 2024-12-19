@@ -5,8 +5,9 @@
         <h2>Documentazione</h2>
         <div-left-new (newItemEvent)="setItem($event)" >
         </div-left-new>
+        <div class="grabber" appResize [leftResize]="firstElement" [rightResize]="rightElement"></div>     
       </div>
-<div class="grabber" appResize [leftResize]="firstElement" [rightResize]="rightElement"></div>     
+      
       <div class="flex-item flex-item-right" #rightElement>
         <div-right-new [item]="this.item"></div-right-new>
       </div>
