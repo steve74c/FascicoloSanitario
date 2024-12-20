@@ -17,9 +17,7 @@ export class DivLeftComponentNew {
   public treeData: MyTreeItemNew[] =[];
   @Output() newItemEvent = new EventEmitter<MyTreeItemNew>();
 
-  constructor(private listTreePath: ListTreePathFilesService,
-              private dfdService : PdfService
-  )  {};
+  constructor(private listTreePath: ListTreePathFilesService  )  {};
 
   ngOnInit() {
     this.listTreePath.getListDirFile().subscribe((response: MyTreeItemNew) => { this.treeData = Array(response);  });
@@ -27,10 +25,7 @@ export class DivLeftComponentNew {
 
   public selectTreeItem(item: MyTreeItemNew): void {
     console.log(item.path)
-    const ret = this.dfdService.getPDF(item).subscribe ( (data:any) => {
-              console.log(data.base64.data); 
-              this.newItemEvent.emit(data.base64.data);});
-    
+    this.newItemEvent.emit(item);
   }
   public toggleTreeItem(item: MyTreeItemNew): void {
     item.expanded = !item.expanded;

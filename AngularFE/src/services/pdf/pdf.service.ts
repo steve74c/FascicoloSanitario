@@ -8,7 +8,7 @@ import config from '../../config/config.json';
   providedIn: 'root'
 })
 export class PdfService {
- 
+
   constructor(private http: HttpClient) {}
 
 
@@ -18,24 +18,12 @@ export class PdfService {
     const headers= {       headers: new HttpHeaders({ 'Content-Type': 'application/json',    }) }
     const body = {'path' : item.path  };
 
-    return this.http.post(config.serverURL + 'pdf/fileNameB64', body, {
-      headers: new HttpHeaders({
-        'Content-Type': 'application/json', // Questo è importante!
-      }),
-    });
-    /*
-    .subscribe({
-      next: data => {
-          return data;
-      },
-      error: error => {
-          console.error('There was an error!', error);
-      }
-    });
-*/
+    return this.http.post(config.serverURL + 'pdf/fileNameB64', body, { headers: new HttpHeaders({
+                                                                                                    'Content-Type': 'application/json', // Questo è importante!
+                                                                                                 }), });
 
   }
-      
+
 
   /*
 
@@ -48,9 +36,9 @@ export class PdfService {
 
   getPdf1(item: MyTreeItemNew): any {
     //const headers: HttpHeaders = new HttpHeaders({responseType: 'blob' });
-    const bodyData = item.name; 
+    const bodyData = item.name;
     //let params: HttpParams = new HttpParams();
- 
+
     //return this.http.post(this.pdfUrl, bodyData, { responseType: 'blob' });
 
     return this.http
@@ -76,7 +64,7 @@ export class PdfService {
 }
 
 */
-      
+
 }
 
 

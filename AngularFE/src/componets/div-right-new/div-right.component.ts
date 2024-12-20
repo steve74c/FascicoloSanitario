@@ -16,8 +16,8 @@ export class DivRightNewComponent {
   pdfData:Promise<ArrayBuffer> | undefined;
   pdfFile: any = "assets/PA_Stefano_Calderone_Fronte.pdf";
 
-  
-  
+
+
   constructor(private pdfService: PdfService) {}
 
   async ngOnInit() {
@@ -29,9 +29,34 @@ export class DivRightNewComponent {
 
     if (changes['item']) {
       //this.pdfFile=this.item
-      console.log('item :', JSON.stringify(this.item));
+      //console.log('item :', JSON.stringify(this.item));
+      console.log('item :', this.item.path);
+      this.pdfService.getPDF(this.item).subscribe( (jsonPdf:any) => {
+        console.log(jsonPdf.base64);
+
+        const byteCharacters = atob(jsonPdf.base64); // Decodifica la stringa Base64
+        const byteNumbers = new Array(byteCharacters.length).fill(0).map((_, i) => byteCharacters.charCodeAt(i));
+        const byteArray = new Uint8Array(byteNumbers);
+
+        this.pdfFile = byteArray;
+    });
+
     }
-  } 
+  }
+
+
+  convertBase64ToBlob(base64 :any) {
+    const byteArray = new Uint8Array(
+      atob(base64)
+        .split("")
+        .map(char => char.charCodeAt(0))
+    );
+    const file = new Blob([byteArray], { type: "application/pdf" });
+    return file;
+  }
+
+
+
     /*
   async getFileByServer()  {
 
@@ -39,7 +64,7 @@ export class DivRightNewComponent {
 
     await this.pdfService.getPDF(this.item).subscribe({
       next: (data :any) => {
-        console.log('item aaaaaaa:', data);  
+        console.log('item aaaaaaa:', data);
         this.pdfFile = data;
       },
       error: (error:any) => {
@@ -49,29 +74,30 @@ export class DivRightNewComponent {
 
   }
         */
-  
 
+/*
    b64toBlob(b64Data: string, contentType='', sliceSize=512)  {
     const byteCharacters = atob(b64Data);
     const byteArrays = [];
-  
+
     for (let offset = 0; offset < byteCharacters.length; offset += sliceSize) {
       const slice = byteCharacters.slice(offset, offset + sliceSize);
-  
+
       const byteNumbers = new Array(slice.length);
       for (let i = 0; i < slice.length; i++) {
         byteNumbers[i] = slice.charCodeAt(i);
       }
-  
+
       const byteArray = new Uint8Array(byteNumbers);
       byteArrays.push(byteArray);
     }
-      
+
     const blob = new Blob(byteArrays, {type: contentType});
     return blob;
   }
+    */
 
-  
+
   changeFile()  {
 
     const contentType = 'application/pdf';
@@ -86,11 +112,11 @@ export class DivRightNewComponent {
     //const blob = this.b64toBlob(b64Data, contentType);
     //var file = new Blob(b64Data, { type: 'application/pdf;base64' });
     //this.pdfFile = `data:application/pdf;base64,${b64Data}`;
-    
+
     //this.pdfFile = blob;
 
   }
-  
-  
-  
+
+
+
 }
