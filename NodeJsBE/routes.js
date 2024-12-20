@@ -38,8 +38,21 @@ router.post('/pdf/fileNameB64', async (req, res) => {
     return res.status(400).send({ error: 'No body found in the request' });
   }
 
-   get(req, res,'/pdf/fileNameB64', ctrlPdfFile.base64_encode(req.body.path))}
-  );
+
+  system_path = req.body.path;
+  if (cfg.sistema="WINDOWS") {
+          system_path =  req.body.path.replace(new RegExp('/','g'),"\\");
+  }   
+  ctrlPdfFile.convertPdfToBase64(system_path).then(base64String => {
+      const json = JSON.stringify({base64: base64String});
+      return res.status(200).send(json); 
+  })
+  .catch(error => {
+      console.error('Errore:', error);
+  });
+
+
+  });
 
 
 

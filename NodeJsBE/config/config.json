@@ -1,4 +1,7 @@
 {
-    "home_path" : "D:\\Documenti\\Visite\\Papa\\FascicoloSanitario",
-    "home_path_old" : "C:\\Project\\MyProject\\DOC"
+    "home_path_old" : "D:\\Documenti\\Visite\\Papa\\FascicoloSanitario",
+    "home_path"     : "C:\\Project\\MyProject\\DOC",
+    "sistema"       : "WINDOWS",
+    "sistema_OLD"   : "LINUX"
+
 }
