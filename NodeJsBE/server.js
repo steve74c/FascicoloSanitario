@@ -1,5 +1,6 @@
 const express = require('express')
 const routes = require('./routes');
+const logger = require('./Logger');
 
 // Costanti
 const PORT = process.env.PORT || 5000
@@ -13,7 +14,6 @@ const corsOptions = {
   credentials: false
 };
 
-
 // app express
 const app = express()
 
@@ -21,11 +21,14 @@ const app = express()
 app.use(express.urlencoded({ extended: true })); 
 app.use(express.json()); 
 
+// per le politiche di cors
 app.use(cors(corsOptions));
+
+// gestione delle rotte
 app.use(routes)
 
+
 app.listen(PORT, () => {
-  
-  console.log(`Server listening at http://localhost:${PORT}`)
+  logger.info(`Server listening at http://localhost:${PORT}`)
 })
 

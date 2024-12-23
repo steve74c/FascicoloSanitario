@@ -1,10 +1,13 @@
 // routes.js
 const express = require('express')
 const router = express.Router()
-const logger = require("./logger");
+const logger = require('./Logger');
+
 const ctrlShFile = require("./controller/controllerShellFile");
 const ctrlPdfFile = require("./controller/controllerBase64");
-var cfg = require('./config/config.json');
+
+
+const cfg = require('./config/config');
 
 
 const arr_uri = { 'HELLO'             : '/hello',
@@ -18,12 +21,12 @@ router.get(arr_uri['HELLO'],  (request, response) => response.json({ message: "H
 router.get(arr_uri['LISTFILE'], (request, response) => fnPath(request, response));
 
 async function  get(req, res , uri, runfn) {
-  logger.log({ 'level': 'debug',  'message': uri});
+  //logger.log({ 'level': 'debug',  'message': uri});
   try {
       let ret =runfn;
       return res.status(200).send(ret); 
     } catch (err) {
-      logger.log({ 'level': 'error',  'message': err.message});
+      //logger.log({ 'level': 'error',  'message': err.message});
       return res.status(500).send(err.message);
     } 
 }
@@ -31,28 +34,15 @@ async function  get(req, res , uri, runfn) {
 router.get(arr_uri['API-LIST_DIR_FILE'], async (req, res) => { get(req, res, arr_uri['API-LIST_DIR_FILE'], ctrlShFile.getListDirFile(cfg.home_path))});
 router.get(arr_uri['API-LIST_DIR_TREE'], async (req, res) => { get(req, res, arr_uri['API-LIST_DIR_TREE'], ctrlShFile.getListDirTree(cfg.home_path))});
 
-//router.get(arr_uri['PDF-FILE_NAME_B64'], async (req, res) => { get(req, res, arr_uri['PDF-FILE_NAME_B64'], ctrlPdfFile.base64_encode)});
-
-router.post('/pdf/fileNameB64', async (req, res) => { 
-  if (!req.body) {
-    return res.status(400).send({ error: 'No body found in the request' });
-  }
 
 
-  system_path = req.body.path;
-  if (cfg.sistema="WINDOWS") {
-          system_path =  req.body.path.replace(new RegExp('/','g'),"\\");
-  }   
-  ctrlPdfFile.convertPdfToBase64(system_path).then(base64String => {
-      const json = JSON.stringify({base64: base64String});
-      return res.status(200).send(json); 
-  })
-  .catch(error => {
-      console.error('Errore:', error);
-  });
+router.post(arr_uri['PDF-FILE_NAME_B64'], async (req, res) => { 
+  logger.info(req.body.path);
+      if (!req.body) 
+          return res.status(400).send({ error: 'No body found in the request' });
+      ctrlPdfFile.base64_encode(req, res);
+});
 
-
-  });
 
 
 

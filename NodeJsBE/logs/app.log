@@ -1,0 +1,53 @@
+[Dec-23-2024 00:39:09] info  - [32mroutes.js:6 - routes 1[39m
+[Dec-23-2024 00:39:09] info  - [32mserver.js:11 - Richiesta ricevuta1[39m
+[Dec-23-2024 00:39:09] info  - [32mserver.js:12 - Richiesta ricevuta2[39m
+[Dec-23-2024 00:39:09] error - [31mserver.js:13 - Richiesta ricevuta3[39m
+[Dec-23-2024 00:40:23] info  - [32mserver.js:30 - Server listening at http://localhost:5000[39m
+[Dec-23-2024 00:42:06] info  - [32mroutes.js:40 - C:/Project/MyProject/DOC/DIR1/2024-06-25-XXX-FSA-Prelievo.pdf[39m
+[Dec-23-2024 00:42:07] info  - [32mroutes.js:40 - C:/Project/MyProject/DOC/DIR2[39m
+[Dec-23-2024 00:42:08] info  - [32mroutes.js:40 - C:/Project/MyProject/DOC/DIR2/ADS CALDERONE EPI PRO GDPR - Originale.pdf[39m
+[Dec-23-2024 00:46:39] info  - [32mserver.js:32 - Server listening at http://localhost:5000[39m
+[Dec-23-2024 00:46:39] info  - [32mroutes.js:40 - C:/Project/MyProject/DOC/DIR2[39m
+[Dec-23-2024 00:46:39] error - [31mcontrollerBase64.js:42 EISDIR: illegal operation on a directory, read[39m
+[Dec-23-2024 00:46:47] info  - [32mserver.js:32 - Server listening at http://localhost:5000[39m
+[Dec-23-2024 00:46:55] info  - [32mroutes.js:40 - C:/Project/MyProject/DOC/DIR1/2024-06-25-XXX-FSA-Prelievo_evidenziato.pdf[39m
+[Dec-23-2024 00:46:56] info  - [32mroutes.js:40 - C:/Project/MyProject/DOC/DIR1/2024-06-25-XXX-FSA-Prelievo.pdf[39m
+[Dec-23-2024 00:57:33] info  - [32mserver.js:32 - Server listening at http://localhost:5000[39m
+[Dec-23-2024 00:57:41] info  - [32mroutes.js:40 - C:/Project/MyProject/DOC/DIR2/ADS CALDERONE EPI PRO GDPR.pdf[39m
+[Dec-23-2024 00:57:43] info  - [32mroutes.js:40 - C:/Project/MyProject/DOC/DIR2/ADS CALDERONE EPI PRO GDPR - Originale.pdf[39m
+[Dec-23-2024 01:03:21] error - [31muncaughtException: PORT is not defined[39m
+[31mReferenceError: PORT is not defined[39m
+[31m    at Server.<anonymous> (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\server.js:31:55)[39m
+[31m    at Object.onceWrapper (node:events:633:28)[39m
+[31m    at Server.emit (node:events:531:35)[39m
+[31m    at emitListeningNT (node:net:1932:10)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:81:21)[39m
+[Dec-23-2024 01:03:40] error - [31muncaughtException: path is not defined[39m
+[31mReferenceError: path is not defined[39m
+[31m    at getStackInfo (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\Logger.js:49:21)[39m
+[31m    at formatLogArguments (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\Logger.js:67:19)[39m
+[31m    at module.exports.info (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\Logger.js:107:29)[39m
+[31m    at Server.<anonymous> (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\server.js:31:10)[39m
+[31m    at Object.onceWrapper (node:events:633:28)[39m
+[31m    at Server.emit (node:events:531:35)[39m
+[31m    at emitListeningNT (node:net:1932:10)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:81:21)[39m
+[Dec-23-2024 01:04:41] error - [31muncaughtException: The "from" argument must be of type string. Received undefined[39m
+[31mTypeError [ERR_INVALID_ARG_TYPE]: The "from" argument must be of type string. Received undefined[39m
+[31m    at Object.relative (node:path:501:5)[39m
+[31m    at getStackInfo (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\Logger.js:49:26)[39m
+[31m    at formatLogArguments (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\Logger.js:67:19)[39m
+[31m    at module.exports.info (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\Logger.js:107:29)[39m
+[31m    at Server.<anonymous> (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\server.js:31:10)[39m
+[31m    at Object.onceWrapper (node:events:633:28)[39m
+[31m    at Server.emit (node:events:531:35)[39m
+[31m    at emitListeningNT (node:net:1932:10)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:81:21)[39m
+[Dec-23-2024 01:06:20] info  - [32mserver.js:31 - Server listening at http://localhost:undefined[39m
+[Dec-23-2024 01:07:12] info  - [32mserver.js:32 - Server listening at http://localhost:5000[39m
+[Dec-23-2024 01:07:15] info  - [32mroutes.js:40 - C:/Project/MyProject/DOC/DIR2/ADS CALDERONE EPI PRO GDPR.pdf[39m
+[Dec-23-2024 01:07:17] info  - [32mroutes.js:40 - C:/Project/MyProject/DOC/DIR2/ADS CALDERONE EPI PRO GDPR - Originale.pdf[39m
+[Dec-23-2024 01:07:18] info  - [32mroutes.js:40 - C:/Project/MyProject/DOC/DIR2/ADS CALDERONE EPI PRO GDPR.pdf[39m
+[Dec-23-2024 01:07:21] info  - [32mroutes.js:40 - C:/Project/MyProject/DOC/DIR1/2024-06-25-XXX-FSA-Prelievo.pdf[39m
+[Dec-23-2024 01:07:23] info  - [32mroutes.js:40 - C:/Project/MyProject/DOC/DIR1/2024-06-25-XXX-FSA-Prelievo_evidenziato.pdf[39m
+[Dec-23-2024 01:07:24] info  - [32mroutes.js:40 - C:/Project/MyProject/DOC/DIR1/2024-06-25-XXX-FSA-Prelievo.pdf[39m

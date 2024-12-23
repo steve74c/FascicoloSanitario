@@ -2,7 +2,7 @@
     Legge i file dalla directory e 
     riporta un json con le info di ogni file
   -------------------------------------------------------*/
-const logger = require("../logger");
+const logger = require("../Logger");
 const dree = require('dree');
 
 const headerDict = {
@@ -48,21 +48,38 @@ const options = {
     console.dir(object, {depth: null, colors: true})
   }
 
-  // ----------------------------------------
+  // -------------------------------------------------------
   // Invia il risultato delle lista dei file ricavato
-  // ----------------------------------------
+  // -------------------------------------------------------
   listDir = ( req,res, runFn) => {
-    logger.log('Body: ' + req.body )    
-    const { filename } = req.body;
-    const body = runFn(filename);
-  	res.send(body,requestOptions).then( () => {})
-                                 .catch(error => {  logger.info("Errore: " + error)      });
+    //logger.debugreq.body);
+    try {
+
+      const { filename } = req.body;
+      const body = runFn(filename);
+      res.send(body,requestOptions).then( () => {})
+                                  .catch(error => {  logger.info("Errore: " + error)      });
+
+    } catch (err) {
+      logger.log({ 'level': 'error',  'message': err.message});
+      return res.status(500).send(err.message);
+    } 
   }
 
+
+
+
+
+  // -----------------------------------------------------------------------
+  // risponde al server il contenuto della directory in formato json
+  // -----------------------------------------------------------------------
   exports.listDirFile = ( req,res) => {
     listDir( req,res,getListDirFile)
   }
   
+  // -----------------------------------------------------------------------
+  // risponde al server il contenuto della directory in formato albero String
+  // -----------------------------------------------------------------------
   exports.listDirTree = ( req,res) => {
     listDir( req,res,getListDirTree)
   }
