@@ -4,7 +4,7 @@
 }
 
 .flex-item{
-  height: 750px;
+  height: 90vh;
   border: 1px solid black;
   overflow: auto;
 }
@@ -25,5 +25,5 @@
 }
 
 .side-panel{
-  background-color: lightgray;  
+  background-color: lightgray;
 }

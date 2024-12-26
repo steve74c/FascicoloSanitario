@@ -24,7 +24,7 @@ export class DivLeftComponentNew {
   }
 
   public selectTreeItem(item: MyTreeItemNew): void {
-    console.log(item.path)
+    //console.log(item.path)
     this.newItemEvent.emit(item);
   }
   public toggleTreeItem(item: MyTreeItemNew): void {
