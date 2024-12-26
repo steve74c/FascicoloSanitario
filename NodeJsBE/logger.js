@@ -11,19 +11,31 @@ var PROJECT_ROOT = path.join(__dirname, '..')
 const options = {
     file:    {
                 level: 'info',
+                label :{ label: CATEGORY },
                 filename: `./logs/app.log`,
                 handleExceptions: true,
                 json: true,
                 maxsize: 5242880, // 5MB
                 maxFiles: 5,
-                colorize: false,
-                timestamp: true },
+                colorize: { level:false}, 
+                timestamp: true,
+                format:   combine(
+                  label({ label: CATEGORY }),
+                  printf((info) => `[${info.timestamp}] ${info.level.padEnd(5, ' ')} - ${info.message}`) 
+                 ),
+              },
     console: {
                 level: 'debug',
                 handleExceptions: true,
                 json: true,
-                colorize: true,
-                timestamp: true  }
+                timestamp: true,
+                format:   combine(
+                  
+                  //format.colorize({ message: true, level:true}), 
+                  format.colorize({ level:true}), 
+                  printf((info) => `[${info.timestamp}] ${info.level.padEnd(5, ' ')} - ${info.message}`) 
+                 ),
+              }
 };
 
 
@@ -64,11 +76,10 @@ function getStackInfo (stackIndex) {
 function formatLogArguments (args) {
   
   //console.log('formatLogArguments 1: ' + JSON.stringify(args))
-  
   args = Array.prototype.slice.call(args)
   //console.log('formatLogArguments 2: ' + JSON.stringify(args))
   var stackInfo = getStackInfo(1)
-
+  //console.log(JSON.stringify(stackInfo))
   if (stackInfo) {
 
     //console.log(JSON.stringify(stackInfo))
@@ -87,13 +98,12 @@ function formatLogArguments (args) {
   
 }
 
-
 const logger = createLogger({
   level:    "debug",
   format:   combine(
                     label({ label: CATEGORY }),
-                    format.colorize({ message: true }),
-                    timestamp({format: "MMM-DD-YYYY HH:mm:ss", }),
+                    //format.colorize({ message: true, level:true}),
+                    timestamp({format: "YYYY-MM-YY HH:mm:ss", }),
                     printf((info) => `[${info.timestamp}] ${info.level.padEnd(5, ' ')} - ${info.message}`) 
                    ),
   transports: [
@@ -101,6 +111,7 @@ const logger = createLogger({
     new transports.Console(options.console)    
   ],
 });
+
 
 module.exports.debug = module.exports.log = function () {
   logger.debug(logger, formatLogArguments(arguments))

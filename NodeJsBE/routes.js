@@ -31,8 +31,8 @@ async function  get(req, res , uri, runfn) {
     } 
 }
 
-router.get(arr_uri['API-LIST_DIR_FILE'], async (req, res) => { get(req, res, arr_uri['API-LIST_DIR_FILE'], ctrlShFile.getListDirFile(cfg.home_path))});
-router.get(arr_uri['API-LIST_DIR_TREE'], async (req, res) => { get(req, res, arr_uri['API-LIST_DIR_TREE'], ctrlShFile.getListDirTree(cfg.home_path))});
+router.get(arr_uri['API-LIST_DIR_FILE'], async (req, res) => { get(req, res, arr_uri['API-LIST_DIR_FILE'], ctrlShFile.getListDirFile(cfg.home_path_doc))});
+router.get(arr_uri['API-LIST_DIR_TREE'], async (req, res) => { get(req, res, arr_uri['API-LIST_DIR_TREE'], ctrlShFile.getListDirTree(cfg.home_path_doc))});
 
 
 

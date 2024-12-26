@@ -1,29 +1,32 @@
 const ctrlFile = require('./controller/controllerShellFile');
 const ctrlBs64 = require('./controller/controllerBase64');
+
+
 const logger = require("./Logger");
+const { create, createDatabase, insertData, viewData } = require('./db/dbSqLite');
 
 var cfg = require('./config/config');
 
-
+const sqlite3 = require('sqlite3').verbose();
 const RELATIVE_PATH_FILE = '\\Anno\\2022\\2022-02-08-DER-FSA-Visita dermatologica.pdf'
 
 
 
 /*
 function test01() {
-  tree = ctrlFile.getListDirFile(cfg.home_path);
+  tree = ctrlFile.getListDirFile(cfg.home_path_doc_doc);
   ctrlFile.printtDirFile(tree)
 }
 */
 
 function test02() {
-  patfile = cfg.home_path + RELATIVE_PATH_FILE
+  patfile = cfg.home_path_doc + RELATIVE_PATH_FILE
   strbs64 = ctrlBs64.getFileBase64(patfile);
   console.log(strbs64);
 }
 
 function test03() {
-  console.log(cfg.home_path);
+  console.log(cfg.home_path_doc);
 }
 
 function test04() {
@@ -38,7 +41,7 @@ const readline = require('readline').createInterface({
 
 readline.question('Seleziona test?  ' +
                   '\n 0) exit' +
-                  //'\n 1) Test 01: Visualizza ad albero delle directory presenti su hd ' +
+                  '\n 1) Test 01: Test DB' +
                   '\n 2) Test 02: converte file (in questo caso pdf) in base64 ' +
                   '\n 3) Test 03: read config file  ' +
                   '\n 4) Test 04: Log  ' +                  
@@ -50,11 +53,26 @@ readline.question('Seleziona test?  ' +
     case '0':
       process.exitCode = 0;
       break;
-      /*
     case '1':
-      test01();
+      const db = new sqlite3.Database('./db/dbFacicoloSanitario.db');
+      try {
+         create(db);
+         //insertData(db);
+         //viewData(db);
+      } catch (error) {
+        logger.error('Errore durante la gestione del database:', error);
+
+      } /*finally {
+        db.close((err) => {
+          if (err) {
+            logger.error('Errore durante la chiusura del database:', err);
+          } else {
+            logger.log('Database chiuso.');
+          }
+        });
+      }   */   
       break;
-      */
+
     case '2':
       test02();
       break;
