@@ -1,12 +1,14 @@
 const ctrlFile = require('./controller/controllerShellFile');
 const ctrlBs64 = require('./controller/controllerBase64');
+const ctrlDB = require("./controller/controllerDB");
 
 
 const logger = require("./Logger");
 const { create, createDatabase, insertData, viewData } = require('./db/dbSqLite');
+const { crea, popola } = require('./db/schemaDB');
 
 var cfg = require('./config/config');
-
+// logger.info("TEST cfg.home_path_doc = " +JSON.stringify(cfg));
 const sqlite3 = require('sqlite3').verbose();
 const RELATIVE_PATH_FILE = '\\Anno\\2022\\2022-02-08-DER-FSA-Visita dermatologica.pdf'
 
@@ -56,7 +58,13 @@ readline.question('Seleziona test?  ' +
     case '1':
       const db = new sqlite3.Database('./db/dbFacicoloSanitario.db');
       try {
-         create(db);
+         //create(db);
+         logger.info(" getFascicoloSanitario ");
+         //popola(db,'CLDFNC42P24G082R');
+         ctrlDB.getFascicoloSanitario(db,'CLDFNC42P24G082R').then( (ret) => {
+              logger.log(JSON.stringify(ret))
+            }    )
+         logger.info(" getFascicoloSanitario fine");
          //insertData(db);
          //viewData(db);
       } catch (error) {

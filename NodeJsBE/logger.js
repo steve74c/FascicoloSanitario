@@ -113,8 +113,12 @@ const logger = createLogger({
 });
 
 
-module.exports.debug = module.exports.log = function () {
-  logger.debug(logger, formatLogArguments(arguments))
+module.exports.log = function () {
+  logger.debug.apply(logger, formatLogArguments(arguments))
+}
+
+module.exports.debug = function () {
+  logger.debug.apply(logger, formatLogArguments(arguments))
 }
 
 module.exports.info = function () {

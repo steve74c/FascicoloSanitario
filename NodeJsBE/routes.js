@@ -7,14 +7,16 @@ const ctrlShFile = require("./controller/controllerShellFile");
 const ctrlPdfFile = require("./controller/controllerBase64");
 
 
-const cfg = require('./config/config');
+
+const cfg = require('./config/config').config;
 
 
 const arr_uri = { 'HELLO'             : '/hello',
                   'LISTFILE'          : '/listfile',
                   'API-LIST_DIR_FILE' : '/api/listDirFile',
                   'API-LIST_DIR_TREE' : '/api/listDirTree',
-                  'PDF-FILE_NAME_B64' : '/pdf/fileNameB64'
+                  'PDF-FILE_NAME_B64' : '/pdf/fileNameB64',
+                  'SQL-LIST_DIR_TREE' : '/sql/listDirTree'
 };
 
 router.get(arr_uri['HELLO'],  (request, response) => response.json({ message: "Hello from server!" }));
@@ -35,6 +37,7 @@ router.get(arr_uri['API-LIST_DIR_FILE'], async (req, res) => { get(req, res, arr
 router.get(arr_uri['API-LIST_DIR_TREE'], async (req, res) => { get(req, res, arr_uri['API-LIST_DIR_TREE'], ctrlShFile.getListDirTree(cfg.home_path_doc))});
 
 
+router.get(arr_uri['SQL-LIST_DIR_TREE'], async (req, res) => { getSqlListDirTree()});
 
 router.post(arr_uri['PDF-FILE_NAME_B64'], async (req, res) => { 
   logger.info(req.body.path);

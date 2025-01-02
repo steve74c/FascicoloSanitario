@@ -1,4 +1,264 @@
-[2024-12-24 10:58:09] info  - dbSqLite.js:96 - --> creaDB
-[2024-12-24 10:58:09] info  - dbSqLite.js:98 - --> creaDB[]
-[2024-12-24 10:58:09] info  - dbSqLite.js:99 - --> creaDB{}
-[2024-12-24 10:58:09] error - dbSqLite.js:116 - {}
+[2024-12-24 11:08:25] info  - server.js:32 - Server listening at http://localhost:5000
+[2024-12-24 11:08:32] error - uncaughtException: The "paths[0]" argument must be of type string. Received undefined
+TypeError [ERR_INVALID_ARG_TYPE]: The "paths[0]" argument must be of type string. Received undefined
+    at resolve (node:path:171:9)
+    at w (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\dree\bundled\lib\commonjs\index.js:1:1786)
+    at Object.ie (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\dree\bundled\lib\commonjs\index.js:1:11226)
+    at exports.getListDirFile (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\controller\controllerShellFile.js:35:54)
+    at C:\Project\MyProject\FascicoloSanitario\NodeJsBE\routes.js:34:119
+    at Layer.handle [as handle_request] (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\express\lib\router\index.js:284:15
+[2024-12-24 11:09:31] info  - server.js:32 - Server listening at http://localhost:5000
+[2024-12-24 11:09:34] error - uncaughtException: The "paths[0]" argument must be of type string. Received undefined
+TypeError [ERR_INVALID_ARG_TYPE]: The "paths[0]" argument must be of type string. Received undefined
+    at resolve (node:path:171:9)
+    at w (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\dree\bundled\lib\commonjs\index.js:1:1786)
+    at Object.ie (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\dree\bundled\lib\commonjs\index.js:1:11226)
+    at exports.getListDirFile (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\controller\controllerShellFile.js:35:54)
+    at C:\Project\MyProject\FascicoloSanitario\NodeJsBE\routes.js:34:119
+    at Layer.handle [as handle_request] (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\express\lib\router\index.js:284:15
+[2024-12-24 11:12:28] info  - server.js:32 - Server listening at http://localhost:5000
+[2024-12-24 11:13:07] info  - routes.js:40 - C:/Project/MyProject/DOC/DIR1/2024-06-25-XXX-FSA-Prelievo_evidenziato.pdf
+[2024-12-24 11:13:13] info  - routes.js:40 - C:/Project/MyProject/DOC/DIR1/2024-06-25-XXX-FSA-Prelievo.pdf
+[2024-12-24 11:16:13] info  - routes.js:40 - C:/Project/MyProject/DOC/CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo.pdf
+[2024-12-24 11:16:27] info  - routes.js:40 - C:/Project/MyProject/DOC
+[2024-12-24 11:16:27] error - controllerBase64.js:42 EISDIR: illegal operation on a directory, read
+[2024-12-24 11:16:29] info  - routes.js:40 - C:/Project/MyProject/DOC/DIR2/ADS CALDERONE EPI PRO GDPR - Originale.pdf
+[2024-12-24 11:17:58] info  - routes.js:40 - C:/Project/MyProject/DOC/DIR2/ALL_A (1).pdf
+[2024-12-24 11:19:46] info  - server.js:32 - Server listening at http://localhost:5000
+[2024-12-24 11:19:46] info  - routes.js:40 - C:/Project/MyProject/DOC
+[2024-12-24 11:19:46] error - controllerBase64.js:42 EISDIR: illegal operation on a directory, read
+[2024-12-24 11:19:59] info  - routes.js:40 - C:/Project/MyProject/DOC/DIR1/2024-06-25-XXX-FSA-Prelievo.pdf
+[2024-12-24 13:02:18] error - uncaughtException: Identifier 'logger' has already been declared
+C:\Project\MyProject\FascicoloSanitario\NodeJsBE\controller\controllerDB.js:1
+const logger = require("../Logger");const logger = require('../Logger');
+                                          ^
+
+SyntaxError: Identifier 'logger' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1281:20)
+    at Module._compile (node:internal/modules/cjs/loader:1321:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Module.require (node:internal/modules/cjs/loader:1233:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\runTest.js:3:16)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+[2024-12-24 13:02:55] error - controllerDB.js:7 - SQLITE_CANTOPEN: unable to open database file
+[2024-12-24 13:02:55] info  - controllerDB.js:8 - Connected to the SQlite database.
+[2024-12-24 13:02:55] info  - dbSqLite.js:17 - Connected to the SQlite database.
+[2024-12-24 13:03:00] info  - runTest.js:62 -  getFascicoloSanitario 
+[2024-12-24 13:03:00] error - runTest.js:69 - Errore durante la gestione del database: ctrlDB.getFascicoloSanitario is not a function
+[2024-12-24 13:04:00] error - uncaughtException: Unexpected token '{'
+C:\Project\MyProject\FascicoloSanitario\NodeJsBE\controller\controllerDB.js:28
+exports.create(db) {
+                   ^
+
+SyntaxError: Unexpected token '{'
+    at wrapSafe (node:internal/modules/cjs/loader:1281:20)
+    at Module._compile (node:internal/modules/cjs/loader:1321:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Module.require (node:internal/modules/cjs/loader:1233:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\runTest.js:3:16)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+[2024-12-24 18:37:41] error - uncaughtException: Unexpected token '{'
+C:\Project\MyProject\FascicoloSanitario\NodeJsBE\controller\controllerDB.js:32
+exports.getFascicoloSanitario = (db,fiscal_code='CLDFNC42P24G082R') {
+                                                                    ^
+
+SyntaxError: Unexpected token '{'
+    at wrapSafe (node:internal/modules/cjs/loader:1281:20)
+    at Module._compile (node:internal/modules/cjs/loader:1321:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Module.require (node:internal/modules/cjs/loader:1233:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\runTest.js:3:16)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+[2024-12-24 18:38:08] error - controllerDB.js:7 - SQLITE_CANTOPEN: unable to open database file
+[2024-12-24 18:38:08] info  - controllerDB.js:8 - Connected to the SQlite database.
+[2024-12-24 18:38:08] info  - dbSqLite.js:17 - Connected to the SQlite database.
+[2024-12-24 18:38:15] info  - runTest.js:62 -  getFascicoloSanitario 
+[2024-12-24 18:38:15] info  - controllerDB.js:34 -  select * from TBL_FS where codice fiscale = upper('CLDFNC42P24G082R'); 
+[2024-12-24 18:38:15] info  - runTest.js:65 -  getFascicoloSanitario fine
+[2024-12-24 18:38:15] info  - controllerDB.js:40 SQLITE_ERROR: near "fiscale": syntax error
+[2024-12-24 18:38:15] error - uncaughtException: SQLITE_ERROR: near "fiscale": syntax error
+Error: SQLITE_ERROR: near "fiscale": syntax error
+--> in Database#all(" select * from TBL_FS where codice fiscale = upper('CLDFNC42P24G082R'); ", [], [Function (anonymous)])
+    at C:\Project\MyProject\FascicoloSanitario\NodeJsBE\controller\controllerDB.js:38:10
+    at new Promise (<anonymous>)
+    at exports.getFascicoloSanitario (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\controller\controllerDB.js:36:10)
+    at C:\Project\MyProject\FascicoloSanitario\NodeJsBE\runTest.js:64:17
+    at [_onLine] [as _onLine] (node:internal/readline/interface:415:7)
+    at [_line] [as _line] (node:internal/readline/interface:888:18)
+    at [_ttyWrite] [as _ttyWrite] (node:internal/readline/interface:1266:22)
+    at ReadStream.onkeypress (node:internal/readline/interface:265:20)
+    at ReadStream.emit (node:events:519:28)
+[2024-12-24 18:38:59] error - controllerDB.js:7 - SQLITE_CANTOPEN: unable to open database file
+[2024-12-24 18:38:59] info  - controllerDB.js:8 - Connected to the SQlite database.
+[2024-12-24 18:38:59] info  - dbSqLite.js:17 - Connected to the SQlite database.
+[2024-12-24 18:40:27] info  - controllerDB.js:8 - Connected to the SQlite database.
+[2024-12-24 18:40:27] info  - dbSqLite.js:17 - Connected to the SQlite database.
+[2024-12-24 18:41:11] error - controllerDB.js:7 - SQLITE_CANTOPEN: unable to open database file
+[2024-12-24 18:41:11] info  - controllerDB.js:8 - Connected to the SQlite database.
+[2024-12-24 18:41:11] info  - dbSqLite.js:17 - Connected to the SQlite database.
+[2024-12-24 18:41:19] info  - controllerDB.js:8 - Connected to the SQlite database.
+[2024-12-24 18:41:19] info  - dbSqLite.js:17 - Connected to the SQlite database.
+[2024-12-24 18:41:20] info  - runTest.js:62 -  getFascicoloSanitario 
+[2024-12-24 18:41:20] info  - controllerDB.js:34 -  select * from TBL_FS where codice_fiscale = upper('CLDFNC42P24G082R'); 
+[2024-12-24 18:41:20] info  - runTest.js:65 -  getFascicoloSanitario fine
+[2024-12-24 18:41:20] info  - controllerDB.js:40 SQLITE_ERROR: no such column: codice_fiscale
+[2024-12-24 18:41:20] error - uncaughtException: SQLITE_ERROR: no such column: codice_fiscale
+Error: SQLITE_ERROR: no such column: codice_fiscale
+--> in Database#all(" select * from TBL_FS where codice_fiscale = upper('CLDFNC42P24G082R'); ", [], [Function (anonymous)])
+    at C:\Project\MyProject\FascicoloSanitario\NodeJsBE\controller\controllerDB.js:38:10
+    at new Promise (<anonymous>)
+    at exports.getFascicoloSanitario (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\controller\controllerDB.js:36:10)
+    at C:\Project\MyProject\FascicoloSanitario\NodeJsBE\runTest.js:64:17
+    at [_onLine] [as _onLine] (node:internal/readline/interface:415:7)
+    at [_line] [as _line] (node:internal/readline/interface:888:18)
+    at [_ttyWrite] [as _ttyWrite] (node:internal/readline/interface:1266:22)
+    at ReadStream.onkeypress (node:internal/readline/interface:265:20)
+    at ReadStream.emit (node:events:519:28)
+[2024-12-24 18:41:50] info  - controllerDB.js:8 - Connected to the SQlite database.
+[2024-12-24 18:41:50] info  - dbSqLite.js:17 - Connected to the SQlite database.
+[2024-12-24 18:41:50] info  - runTest.js:62 -  getFascicoloSanitario 
+[2024-12-24 18:41:50] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
+[2024-12-24 18:41:50] info  - runTest.js:65 -  getFascicoloSanitario fine
+[2024-12-24 18:43:14] info  - controllerDB.js:8 - Connected to the SQlite database.
+[2024-12-24 18:43:14] info  - dbSqLite.js:17 - Connected to the SQlite database.
+[2024-12-24 18:43:15] info  - runTest.js:62 -  getFascicoloSanitario 
+[2024-12-24 18:43:15] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
+[2024-12-24 18:43:15] info  - runTest.js:68 -  getFascicoloSanitario fine
+[2024-12-24 18:44:15] info  - controllerDB.js:8 - Connected to the SQlite database.
+[2024-12-24 18:44:15] info  - dbSqLite.js:17 - Connected to the SQlite database.
+[2024-12-24 18:44:16] info  - runTest.js:62 -  getFascicoloSanitario 
+[2024-12-24 18:44:16] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
+[2024-12-24 18:44:16] info  - runTest.js:68 -  getFascicoloSanitario fine
+[2024-12-24 18:46:51] info  - controllerDB.js:8 - Connected to the SQlite database.
+[2024-12-24 18:46:51] info  - dbSqLite.js:17 - Connected to the SQlite database.
+[2024-12-24 18:46:52] info  - runTest.js:62 -  getFascicoloSanitario 
+[2024-12-24 18:46:52] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
+[2024-12-24 18:46:52] info  - runTest.js:68 -  getFascicoloSanitario fine
+[2024-12-24 18:47:19] info  - controllerDB.js:8 - Connected to the SQlite database.
+[2024-12-24 18:47:19] info  - dbSqLite.js:17 - Connected to the SQlite database.
+[2024-12-24 18:47:19] info  - runTest.js:62 -  getFascicoloSanitario 
+[2024-12-24 18:47:19] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
+[2024-12-24 18:47:19] info  - runTest.js:68 -  getFascicoloSanitario fine
+[2024-12-24 18:47:59] info  - controllerDB.js:8 - Connected to the SQlite database.
+[2024-12-24 18:47:59] info  - dbSqLite.js:17 - Connected to the SQlite database.
+[2024-12-24 18:47:59] info  - runTest.js:62 -  getFascicoloSanitario 
+[2024-12-24 18:47:59] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
+[2024-12-24 18:47:59] info  - runTest.js:68 -  getFascicoloSanitario fine
+[2024-12-24 18:47:59] error - uncaughtException: logger.log is not a function
+TypeError: logger.log is not a function
+    at Statement.<anonymous> (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\controller\controllerDB.js:43:19)
+    at Statement.replacement (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\sqlite3\lib\trace.js:25:27)
+    at Statement.replacement (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\sqlite3\lib\trace.js:25:27)
+[2024-12-24 18:48:32] info  - controllerDB.js:8 - Connected to the SQlite database.
+[2024-12-24 18:48:32] info  - dbSqLite.js:17 - Connected to the SQlite database.
+[2024-12-24 18:48:32] info  - runTest.js:62 -  getFascicoloSanitario 
+[2024-12-24 18:48:32] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
+[2024-12-24 18:48:32] info  - runTest.js:68 -  getFascicoloSanitario fine
+[2024-12-24 18:48:32] error - uncaughtException: logger.log is not a function
+TypeError: logger.log is not a function
+    at Statement.<anonymous> (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\controller\controllerDB.js:43:19)
+    at Statement.replacement (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\sqlite3\lib\trace.js:25:27)
+    at Statement.replacement (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\sqlite3\lib\trace.js:25:27)
+[2024-12-24 18:49:35] info  - controllerDB.js:8
+[2024-12-24 18:49:35] info  - dbSqLite.js:17
+[2024-12-24 18:49:35] info  - runTest.js:62
+[2024-12-24 18:49:35] info  - controllerDB.js:34
+[2024-12-24 18:49:35] info  - runTest.js:68
+[2024-12-24 18:50:26] info  - controllerDB.js:8
+[2024-12-24 18:50:26] info  - dbSqLite.js:17
+[2024-12-24 18:50:26] info  - runTest.js:62
+[2024-12-24 18:50:26] info  - controllerDB.js:34
+[2024-12-24 18:50:26] info  - runTest.js:68
+[2024-12-24 18:50:26] error - uncaughtException: logger.log is not a function
+TypeError: logger.log is not a function
+    at Statement.<anonymous> (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\controller\controllerDB.js:43:19)
+    at Statement.replacement (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\sqlite3\lib\trace.js:25:27)
+    at Statement.replacement (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\sqlite3\lib\trace.js:25:27)
+[2024-12-24 18:51:10] info  - controllerDB.js:8
+[2024-12-24 18:51:10] info  - dbSqLite.js:17
+[2024-12-24 18:51:11] info  - runTest.js:62
+[2024-12-24 18:51:11] info  - controllerDB.js:34
+[2024-12-24 18:51:11] info  - runTest.js:68
+[2024-12-24 18:51:43] info  - controllerDB.js:8 - Connected to the SQlite database.
+[2024-12-24 18:51:43] info  - dbSqLite.js:17 - Connected to the SQlite database.
+[2024-12-24 18:51:44] info  - runTest.js:62 -  getFascicoloSanitario 
+[2024-12-24 18:51:44] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
+[2024-12-24 18:51:44] info  - runTest.js:68 -  getFascicoloSanitario fine
+[2024-12-24 18:53:01] info  - controllerDB.js:8
+[2024-12-24 18:53:01] info  - dbSqLite.js:17
+[2024-12-24 18:53:01] info  - runTest.js:62
+[2024-12-24 18:53:01] info  - controllerDB.js:34
+[2024-12-24 18:53:01] info  - runTest.js:68
+[2024-12-24 18:53:20] info  - controllerDB.js:8
+[2024-12-24 18:53:20] info  - dbSqLite.js:17
+[2024-12-24 18:53:21] info  - runTest.js:62
+[2024-12-24 18:53:21] info  - controllerDB.js:34
+[2024-12-24 18:53:21] info  - runTest.js:68
+[2024-12-24 18:53:32] info  - controllerDB.js:8
+[2024-12-24 18:53:32] info  - dbSqLite.js:17
+[2024-12-24 18:53:33] info  - runTest.js:62
+[2024-12-24 18:53:33] info  - controllerDB.js:34
+[2024-12-24 18:53:33] info  - runTest.js:68
+[2024-12-24 18:53:47] info  - controllerDB.js:8 - Connected to the SQlite database.
+[2024-12-24 18:53:47] info  - dbSqLite.js:17 - Connected to the SQlite database.
+[2024-12-24 18:53:49] info  - controllerDB.js:8 - Connected to the SQlite database.
+[2024-12-24 18:53:49] info  - dbSqLite.js:17 - Connected to the SQlite database.
+[2024-12-24 18:53:49] info  - runTest.js:62 -  getFascicoloSanitario 
+[2024-12-24 18:53:49] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
+[2024-12-24 18:53:49] info  - runTest.js:68 -  getFascicoloSanitario fine
+[2024-12-24 18:54:03] info  - controllerDB.js:8 - Connected to the SQlite database.
+[2024-12-24 18:54:03] info  - dbSqLite.js:17 - Connected to the SQlite database.
+[2024-12-24 18:54:04] info  - runTest.js:62 -  getFascicoloSanitario 
+[2024-12-24 18:54:04] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
+[2024-12-24 18:54:04] info  - runTest.js:68 -  getFascicoloSanitario fine
+[2024-12-24 18:54:29] info  - controllerDB.js:8 - Connected to the SQlite database.
+[2024-12-24 18:54:29] info  - dbSqLite.js:17 - Connected to the SQlite database.
+[2024-12-24 18:54:30] info  - runTest.js:62 -  getFascicoloSanitario 
+[2024-12-24 18:54:30] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
+[2024-12-24 18:54:30] info  - runTest.js:68 -  getFascicoloSanitario fine
+[2024-12-24 18:54:30] info  - [object Object]
+[2024-12-24 18:54:30] info  - [object Object]
+[2024-12-24 18:54:30] info  - [object Object]
+[2024-12-24 18:54:39] info  - controllerDB.js:8 - Connected to the SQlite database.
+[2024-12-24 18:54:39] info  - dbSqLite.js:17 - Connected to the SQlite database.
+[2024-12-24 18:54:40] info  - runTest.js:62 -  getFascicoloSanitario 
+[2024-12-24 18:54:40] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
+[2024-12-24 18:54:40] info  - runTest.js:68 -  getFascicoloSanitario fine
+[2024-12-24 18:54:40] info  - controllerDB.js:43 - [{"cod_fiscale":"CLDFNC42P24G082R","file":"2024-06-25-XXX-FSA-Prelievo.pdf","relative_path":"CLDFNC42P24G082R/anno/2024","up_path":"2024","date":"2024-12-29","disciplina":"XXX","luogo":"FSA"},{"cod_fiscale":"CLDFNC42P24G082R","file":"2024-06-25-XXX-FSA-Prelievo_evidenziato.pdf","relative_path":"CLDFNC42P24G082R/anno/2024","up_path":"2024","date":"2024-12-29","disciplina":"XXX","luogo":"FSA"},{"cod_fiscale":"CLDFNC42P24G082R","file":"2025-06-25-XXX-FSA-Prelievo.pdf","relative_path":"CLDFNC42P24G082R/anno/2025","up_path":"2025","date":"2024-12-29","disciplina":"XXX","luogo":"FSA"}]
+[2024-12-24 18:54:40] info  - runTest.js:65 - THEN
+[2024-12-24 18:54:40] info  - runTest.js:66 - [{"cod_fiscale":"CLDFNC42P24G082R","file":"2024-06-25-XXX-FSA-Prelievo.pdf","relative_path":"CLDFNC42P24G082R/anno/2024","up_path":"2024","date":"2024-12-29","disciplina":"XXX","luogo":"FSA"},{"cod_fiscale":"CLDFNC42P24G082R","file":"2024-06-25-XXX-FSA-Prelievo_evidenziato.pdf","relative_path":"CLDFNC42P24G082R/anno/2024","up_path":"2024","date":"2024-12-29","disciplina":"XXX","luogo":"FSA"},{"cod_fiscale":"CLDFNC42P24G082R","file":"2025-06-25-XXX-FSA-Prelievo.pdf","relative_path":"CLDFNC42P24G082R/anno/2025","up_path":"2025","date":"2024-12-29","disciplina":"XXX","luogo":"FSA"}]
+[2024-12-24 18:54:50] info  - controllerDB.js:8 - Connected to the SQlite database.
+[2024-12-24 18:54:50] info  - dbSqLite.js:17 - Connected to the SQlite database.
+[2024-12-24 18:54:51] info  - runTest.js:62 -  getFascicoloSanitario 
+[2024-12-24 18:54:51] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
+[2024-12-24 18:54:51] info  - runTest.js:68 -  getFascicoloSanitario fine
+[2024-12-24 18:55:42] info  - controllerDB.js:8 - Connected to the SQlite database.
+[2024-12-24 18:55:42] info  - dbSqLite.js:17 - Connected to the SQlite database.
+[2024-12-24 18:55:43] info  - runTest.js:62 -  getFascicoloSanitario 
+[2024-12-24 18:55:43] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
+[2024-12-24 18:55:43] info  - runTest.js:68 -  getFascicoloSanitario fine
+[2024-12-24 18:56:04] info  - controllerDB.js:8 - Connected to the SQlite database.
+[2024-12-24 18:56:04] info  - dbSqLite.js:17 - Connected to the SQlite database.
+[2024-12-24 18:56:05] info  - runTest.js:62 -  getFascicoloSanitario 
+[2024-12-24 18:56:05] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
+[2024-12-24 18:56:05] info  - runTest.js:67 -  getFascicoloSanitario fine
