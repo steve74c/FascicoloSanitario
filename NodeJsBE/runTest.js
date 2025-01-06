@@ -1,6 +1,7 @@
 const ctrlFile = require('./controller/controllerShellFile');
 const ctrlBs64 = require('./controller/controllerBase64');
 const ctrlDB = require("./controller/controllerDB");
+const jTree = require("./utils/pathToJsonTree");
 
 
 const logger = require("./Logger");
@@ -63,8 +64,10 @@ readline.question('Seleziona test?  ' +
          //popola(db,'CLDFNC42P24G082R');
          ctrlDB.getFascicoloSanitario(db,'CLDFNC42P24G082R').then( (ret) => {
               logger.log(JSON.stringify(ret))
+              tree = new jTree.Tree (ret,'CLDFNC42P24G082R');
             }    )
          logger.info(" getFascicoloSanitario fine");
+         
          //insertData(db);
          //viewData(db);
       } catch (error) {

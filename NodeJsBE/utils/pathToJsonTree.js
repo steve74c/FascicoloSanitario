@@ -1,15 +1,75 @@
+
+const logger = require("../Logger");
 class Node {
-    constructor(name, parentName, relativePath,type,extension,children) {
+    constructor(name, parentName, relativePath,type,extension,children=[]) {
         this.name = name;
         this.parentName = parentName;
         this.relativePath = relativePath;
         this.type = type;        
         this.extension = extension;
         this.children = children;
-        this.children = [];
+
     }
 }
-JSON.stringify
+
+
+class Tree {
+
+    constructor(nodes,rootNode) {
+
+        this.tree = [];
+        const node = new Node(rootNode, '', '','root','',[]);
+        this.tree.push(node);
+        
+        this.setTree(nodes);
+        logger.log(JSON.stringify(this.tree))
+
+    }
+
+    setTree(nodes) {
+        Object.values(nodes).forEach(node => {
+            let arr = node.relative_path.split('/');
+            const nodetree = this.addNode(this.tree,arr,'',null)
+
+            logger.log('---------> RET  nodetree = ' + JSON.stringify(nodetree))
+
+            //const newnode = new Node(node.name, node.parentName,node.relativePath,node.type,node.extension);
+            //nodetree.push(newnode);
+
+        })
+
+    }
+
+    addNode(nodetree,arrPathNode,parentName,nodeParent) {
+        if (arrPathNode[0] != undefined) {
+            if (nodetree) {
+                const nodeElement = nodetree.find((element) =>element.name == arrPathNode[0]);
+
+                if (nodeElement  != undefined) {
+                    arrPathNode.shift();
+                    logger.log('---------> IF arrPathNode = ' + JSON.stringify(arrPathNode))
+                    return this.addNode(nodeElement.children,arrPathNode,nodetree.name)
+                }
+                else    {
+                    logger.log('---------> ELSE arrPathNode[0] = ' + arrPathNode[0])
+                    const node = new Node(arrPathNode[0], parentName, '','DIR','',[]);
+                    nodetree.push(node);
+                    logger.log('---------> ELSE 1 nodetree = ' + JSON.stringify(nodetree))
+                    logger.log('---------> ELSE 2 this.tree = ' + JSON.stringify(this.tree))
+                    arrPathNode.shift();
+                    return this.addNode(nodetree.children,arrPathNode,nodetree.name,nodetree)
+
+                }
+            } 
+        }
+        
+        return nodeParent;   
+    }
+
+
+
+}
+
 function buildTree(data, parentName = null) {
     const nodes = {};
     // Create nodes for each item in the data
@@ -31,5 +91,5 @@ function buildTree(data, parentName = null) {
     return tree;
 }
 
-module.exports = { Node, buildTree };
+module.exports = { Node, buildTree ,Tree};
 
