@@ -1,7 +1,7 @@
 
 const logger = require("../Logger");
 class Node {
-    constructor(name, parentName, relativePath,type,extension,children=[]) {
+    constructor(name, parentName, relativePath,type,extension,children=new Array([])) {
         this.name = name;
         this.parentName = parentName;
         this.relativePath = relativePath;
@@ -29,41 +29,48 @@ class Tree {
     setTree(nodes) {
         Object.values(nodes).forEach(node => {
             let arr = node.relative_path.split('/');
-            const nodetree = this.addNode(this.tree,arr,'',null)
-
-            logger.log('---------> RET  nodetree = ' + JSON.stringify(nodetree))
-
-            //const newnode = new Node(node.name, node.parentName,node.relativePath,node.type,node.extension);
-            //nodetree.push(newnode);
-
+            const nodetree = this.addNode(this.tree,arr,'',node)
         })
 
     }
 
-    addNode(nodetree,arrPathNode,parentName,nodeParent) {
+
+    addFileToNode(arrPathNode,parentName,node,nodeToAdd) {
+        if (arrPathNode.length == 1) {
+            const nodenew =new Node(nodeToAdd.file, parentName,nodeToAdd.relative_path,'File','PDF',[]);
+            node.push(nodenew);
+        }      
+    }
+
+       
+    addNode(nodetree,arrPathNode,parentName,nodeToAdd) {
+
         if (arrPathNode[0] != undefined) {
             if (nodetree) {
-                const nodeElement = nodetree.find((element) =>element.name == arrPathNode[0]);
-
-                if (nodeElement  != undefined) {
+                const posElement = nodetree.findIndex((element) =>element.name == arrPathNode[0]);
+                if (posElement  != -1) {
+                    this.addFileToNode(arrPathNode,arrPathNode[0],nodetree[posElement].children,nodeToAdd)
                     arrPathNode.shift();
-                    logger.log('---------> IF arrPathNode = ' + JSON.stringify(arrPathNode))
-                    return this.addNode(nodeElement.children,arrPathNode,nodetree.name)
+                    return this.addNode(nodetree[posElement].children,arrPathNode,nodetree[posElement].name,nodeToAdd)
                 }
                 else    {
-                    logger.log('---------> ELSE arrPathNode[0] = ' + arrPathNode[0])
-                    const node = new Node(arrPathNode[0], parentName, '','DIR','',[]);
+                    const node = new Node(arrPathNode[0], parentName, '','DIR' ,'',new Array());
+                    this.addFileToNode(arrPathNode,node.name,node.children,nodeToAdd)
                     nodetree.push(node);
-                    logger.log('---------> ELSE 1 nodetree = ' + JSON.stringify(nodetree))
-                    logger.log('---------> ELSE 2 this.tree = ' + JSON.stringify(this.tree))
+                    const posElement = nodetree.findIndex((element) =>element.name == arrPathNode[0]);
                     arrPathNode.shift();
-                    return this.addNode(nodetree.children,arrPathNode,nodetree.name,nodetree)
-
+                    return this.addNode(nodetree[posElement].children,arrPathNode,nodetree[posElement].name,nodeToAdd)
                 }
             } 
+            else 
+                logger.log('       --> EXIT IF  nodetree');
         }
+        else
+            logger.log('       --> EXIT IF  arrPathNode');
+
+        return nodetree;
+
         
-        return nodeParent;   
     }
 
 
@@ -71,10 +78,10 @@ class Tree {
 }
 
 function buildTree(data, parentName = null) {
-    const nodes = {};
+    const nodes = [];
     // Create nodes for each item in the data
     data.forEach(({ name, parentName, relativePath,type,extension, }) => {
-        nodes[name] = new Node(name, parentName, relativePath,type,extension,);
+        nodes[name] = new Node(name, parentName, relativePath,type,extension,[]);
     });
     const tree = [];
     Object.values(nodes).forEach(node => {
