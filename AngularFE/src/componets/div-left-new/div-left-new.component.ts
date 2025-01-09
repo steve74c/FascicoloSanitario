@@ -20,7 +20,7 @@ export class DivLeftComponentNew {
   constructor(private listTreePath: ListTreePathFilesService  )  {};
 
   ngOnInit() {
-    this.listTreePath.getListDirFile().subscribe((response: MyTreeItemNew) => { this.treeData = Array(response);  });
+    this.listTreePath.getSqlListDirFile().subscribe((response: MyTreeItemNew) => { this.treeData = Array(response);  });
   }
 
   public selectTreeItem(item: MyTreeItemNew): void {

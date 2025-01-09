@@ -14,11 +14,12 @@ export class DivRightNewComponent {
   @Input()
   item!: MyTreeItemNew;
   pdfData:Promise<ArrayBuffer> | undefined;
-  pdfFile: any = "assets/PA_Stefano_Calderone_Fronte.pdf";
-
+  pdfFile: any =""
+  pdfDownloadName: any ="file.pdf"
   constructor(private pdfService: PdfService) {}
 
-  async ngOnInit() { }
+  async ngOnInit() {
+  }
 
   convertBase64ToBlob(base64 :any) {
     const byteCharacters = atob(base64); // Decodifica la stringa Base64
@@ -26,16 +27,48 @@ export class DivRightNewComponent {
     const byteArray = new Uint8Array(byteNumbers);
     return byteArray;
   }
+  b64toBlob(b64Data: string, contentType: string, sliceSize: number) {
+    const byteCharacters = atob(b64Data);
+    const byteArrays = [];
+
+    for (let offset = 0; offset < byteCharacters.length; offset += sliceSize) {
+      const slice = byteCharacters.slice(offset, offset + sliceSize);
+
+      const byteNumbers = new Array(slice.length);
+      for (let i = 0; i < slice.length; i++) {
+        byteNumbers[i] = slice.charCodeAt(i);
+      }
+
+      const byteArray = new Uint8Array(byteNumbers);
+      byteArrays.push(byteArray);
+    }
+
+    const blob = new Blob(byteArrays, {type: contentType});
+    return blob;
+  }
 
   // ngOnChanges viene chiamato ogni volta che inputValue cambia
   ngOnChanges(changes: SimpleChanges): void {
 
+
+
     if (changes['item']) {
-      //console.log('item :', this.item.path);
-      if ( this.item)  {
-        this.pdfService.getPDF(this.item).subscribe( (jsonPdf:any) => { this.pdfFile = this.convertBase64ToBlob(jsonPdf.base64); });
+      if (changes.item.currentValue) {
+      if ( changes.item.currentValue.name)  {
+        this.pdfDownloadName = changes.item.currentValue.name;
+        this.pdfService.getPDF(changes.item.currentValue).pipe()
+                       .subscribe( (jsonPdf:any) => {
+                          this.pdfFile = this.convertBase64ToBlob(jsonPdf.base64);
+
+                          //this.pdfFile = URL.createObjectURL(this.b64toBlob(jsonPdf.base64,'data:application/pdf;base64', 1024));
+
+                          //console.log('base64 :', jsonPdf.base64);
+                          //this.pdfFile = jsonPdf.base64;
+
+                        });
       }
-    }
+    }    }
+
   }
 
 }

@@ -1,9 +1,18 @@
+const config =  require('./config.js');
 const express = require('express')
 const routes = require('./routes');
 const logger = require('./Logger');
 
+
+logger.info(__dirname + '\\environments')
+
+logger.info(config.NODE_ENV);
+logger.info(config.HOST);
+logger.info(config.PORT);
+
+
 // Costanti
-const PORT = process.env.PORT || 5000
+const PORT = config.PORT || 5000
 
 //  Gestione CORS
 var cors = require('cors')

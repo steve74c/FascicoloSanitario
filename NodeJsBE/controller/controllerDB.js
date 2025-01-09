@@ -1,8 +1,8 @@
 const logger = require("../Logger");
-const cfg = require('../config/config').config;
+const cfg = require('../config');
 const sqlite3 = require('sqlite3').verbose();
 
-const db = new sqlite3.Database(cfg.home_db, (err) => {
+const db = new sqlite3.Database(cfg.PATH_DB, (err) => {
   if (err) 
     logger.error(err.message);
   logger.info("Connected to the SQlite database.");

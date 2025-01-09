@@ -7,8 +7,12 @@ const ctrlShFile = require("./controller/controllerShellFile");
 const ctrlPdfFile = require("./controller/controllerBase64");
 
 
+const jTree = require("./utils/pathToJsonTree");
+const sqlite3 = require('sqlite3').verbose();
+const ctrlDB = require("./controller/controllerDB");
 
-const cfg = require('./config/config').config;
+
+const cfg = require('./config');
 
 
 const arr_uri = { 'HELLO'             : '/hello',
@@ -16,8 +20,10 @@ const arr_uri = { 'HELLO'             : '/hello',
                   'API-LIST_DIR_FILE' : '/api/listDirFile',
                   'API-LIST_DIR_TREE' : '/api/listDirTree',
                   'PDF-FILE_NAME_B64' : '/pdf/fileNameB64',
-                  'SQL-LIST_DIR_TREE' : '/sql/listDirTree'
+                  'SQL-LIST_DIR_TREE' : '/sql/listDirFile'
 };
+
+const db = new sqlite3.Database('./db/dbFacicoloSanitario.db');
 
 router.get(arr_uri['HELLO'],  (request, response) => response.json({ message: "Hello from server!" }));
 router.get(arr_uri['LISTFILE'], (request, response) => fnPath(request, response));
@@ -25,7 +31,7 @@ router.get(arr_uri['LISTFILE'], (request, response) => fnPath(request, response)
 async function  get(req, res , uri, runfn) {
   //logger.log({ 'level': 'debug',  'message': uri});
   try {
-      let ret =runfn;
+      let ret =await runfn;
       return res.status(200).send(ret); 
     } catch (err) {
       //logger.log({ 'level': 'error',  'message': err.message});
@@ -33,17 +39,34 @@ async function  get(req, res , uri, runfn) {
     } 
 }
 
-router.get(arr_uri['API-LIST_DIR_FILE'], async (req, res) => { get(req, res, arr_uri['API-LIST_DIR_FILE'], ctrlShFile.getListDirFile(cfg.home_path_doc))});
-router.get(arr_uri['API-LIST_DIR_TREE'], async (req, res) => { get(req, res, arr_uri['API-LIST_DIR_TREE'], ctrlShFile.getListDirTree(cfg.home_path_doc))});
+router.get(arr_uri['API-LIST_DIR_FILE'], async (req, res) => { get(req, res, arr_uri['API-LIST_DIR_FILE'], ctrlShFile.getListDirFile(cfg.HOME_PATH_DOC))});
+router.get(arr_uri['API-LIST_DIR_TREE'], async (req, res) => { get(req, res, arr_uri['API-LIST_DIR_TREE'], ctrlShFile.getListDirTree(cfg.HOME_PATH_DOC))});
 
 
-router.get(arr_uri['SQL-LIST_DIR_TREE'], async (req, res) => { getSqlListDirTree()});
+router.get(arr_uri['SQL-LIST_DIR_TREE'], async (req, res) => { 
+    
+    get(req, res, arr_uri['API-LIST_DIR_TREE'], ctrlDB.getFascicoloSanitario(db,'CLDFNC42P24G082R')
+       .then( (ret) => {  
+        //const tree = new jTree.Tree(ret,'CLDFNC42P24G082R'); 
+        return JSON.stringify(new jTree.Tree(ret,'CLDFNC42P24G082R').getTree()[0]) }) 
+       
+      ) 
+       }
+       
+);
+
 
 router.post(arr_uri['PDF-FILE_NAME_B64'], async (req, res) => { 
   logger.info(req.body.path);
       if (!req.body) 
           return res.status(400).send({ error: 'No body found in the request' });
       ctrlPdfFile.base64_encode(req, res);
+      /*
+                  res.status(200).json({
+                      status: 'success',
+                      fileName: "system_path"
+                    });
+                    */
 });
 
 

@@ -1,9 +1,21 @@
 {
+  "author": "Stefano Calderone",
+  "name": "Fascicolo Sanitario",
+  "version": "1.0.0",
+  "description": "Raccoglie tutti gli esami fatti delle persone",
+  "main": "server.js",
+  "scripts": {
+    "dev": "set NODE_ENV=development&& node server.js",
+    "prod": "set NODE_ENV=production&& node server.js",
+    "home": "set NODE_ENV=home&& node server.js",
+    "work": "set NODE_ENV=work&& node server.js"
+  },
   "dependencies": {
     "@sqlite.org/sqlite-wasm": "^3.47.2-build1",
     "cors": "^2.8.5",
     "dir-to-json": "^1.0.0",
     "directory-tree": "^3.5.2",
+    "dotenv": "^16.4.7",
     "dree": "^5.0.8",
     "express": "^4.19.2",
     "get-windows-shortcut-properties": "^1.3.0",
@@ -14,3 +26,4 @@
   },
   "type": "commonjs"
 }
+

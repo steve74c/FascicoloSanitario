@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html>
 <body>
+
   <ngx-extended-pdf-viewer
-      [src]="this.pdfFile">
-  </ngx-extended-pdf-viewer>
+  [src]="this.pdfFile"
+  [height]="'auto'"
+  [textLayer]="true"
+  [showHandToolButton]="true"
+  [filenameForDownload]="this.pdfDownloadName">
+</ngx-extended-pdf-viewer>
 </body>
 </html>

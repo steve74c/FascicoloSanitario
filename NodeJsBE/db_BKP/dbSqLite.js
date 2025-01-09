@@ -1,11 +1,11 @@
 const logger = require('../Logger');
-const cfg = require('../config/config').config;
+const cfg = require('../config');
 const sqlite3 = require('sqlite3').verbose();
 
 const {create_schema }= require('./schemaDB');
 
 
-//const db = new sqlite3.Database(cfg.home_db, (err) => {
+//const db = new sqlite3.Database(cfg.PATH_DB, (err) => {
 const db = new sqlite3.Database('./dbFacicoloSanitario.db', (err) => {  
   
   if (err) {

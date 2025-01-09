@@ -8,8 +8,8 @@ const logger = require("./Logger");
 const { create, createDatabase, insertData, viewData } = require('./db/dbSqLite');
 const { crea, popola } = require('./db/schemaDB');
 
-var cfg = require('./config/config');
-// logger.info("TEST cfg.home_path_doc = " +JSON.stringify(cfg));
+var cfg = require('./config');
+// logger.info("TEST cfg.HOME_PATH_DOC = " +JSON.stringify(cfg));
 const sqlite3 = require('sqlite3').verbose();
 const RELATIVE_PATH_FILE = '\\Anno\\2022\\2022-02-08-DER-FSA-Visita dermatologica.pdf'
 
@@ -17,13 +17,13 @@ const RELATIVE_PATH_FILE = '\\Anno\\2022\\2022-02-08-DER-FSA-Visita dermatologic
 
 /*
 function test01() {
-  tree = ctrlFile.getListDirFile(cfg.home_path_doc_doc);
+  tree = ctrlFile.getListDirFile(cfg.HOME_PATH_DOC);
   ctrlFile.printtDirFile(tree)
 }
 */
 
 function test02() {
-  patfile = cfg.home_path_doc + RELATIVE_PATH_FILE
+  patfile = cfg.HOME_PATH_DOC + RELATIVE_PATH_FILE
   strbs64 = ctrlBs64.getFileBase64(patfile);
   console.log(strbs64);
 }
@@ -42,34 +42,51 @@ const readline = require('readline').createInterface({
   output: process.stdout
 });
 
+
+const menu = [
+  {'id':'0', 'descr' : 'exit'},
+  {'id':'1', 'descr' : 'Crea DB'},
+  {'id':'2', 'descr' : 'Popola DB'},
+  {'id':'3', 'descr' : 'Path to Tree'},
+  {'id':'4', 'descr' : 'Test 02: converte file (in questo caso pdf) in base64'},
+  {'id':'5', 'descr' : 'Test 03: read config file'},
+  {'id':'6', 'descr' : 'Test 04: Log'},
+]
+  
+
 readline.question('Seleziona test?  ' +
-                  '\n 0) exit' +
-                  '\n 1) Test 01: Test DB' +
-                  '\n 2) Test 02: converte file (in questo caso pdf) in base64 ' +
-                  '\n 3) Test 03: read config file  ' +
-                  '\n 4) Test 04: Log  ' +                  
+                  '\n ' + menu[0].id + ') ' +  menu[0].descr +
+                  '\n ' + menu[1].id + ') ' +  menu[1].descr +
+                  '\n ' + menu[2].id + ') ' +  menu[2].descr +
+                  '\n ' + menu[3].id + ') ' +  menu[3].descr +
+                  '\n ' + menu[4].id + ') ' +  menu[4].descr +
+                  '\n ' + menu[5].id + ') ' +  menu[5].descr +
+                  '\n ' + menu[6].id + ') ' +  menu[6].descr +
                   ' \n -> Selezione : ', test => {
   console.log(`\nTest selezionato ${test}!`);
   readline.close();
 
+  const db = new sqlite3.Database('./db/dbFacicoloSanitario.db');
   switch(test) {
-    case '0':
+    case  menu[0].id:  // 'exit'
       process.exitCode = 0;
       break;
-    case '1':
-      const db = new sqlite3.Database('./db/dbFacicoloSanitario.db');
+    case  menu[1].id: // 'Crea DB'
+      try { create(db); } catch (error) { logger.error('Errore durante la gestione del database:', error); } 
+      break;
+   case  menu[2].id: // 'Popola DB'
+      try { popola(db,'CLDFNC42P24G082R'); } catch (error) {logger.error('Errore durante la gestione del database:', error); } 
+      break;
+   case  menu[6].id: 
+      str = "C:\\Project\\MyProject\\DOC\CLDFNC42P24G082R\\anno\\2024\\2024-06-test";      
+      str = str.replace(new RegExp('/\\/\\','g'),"\\");
+      logger.log(str)
+   case  menu[3].id: 
       try {
-         //create(db);
-         logger.info(" getFascicoloSanitario ");
-         //popola(db,'CLDFNC42P24G082R');
          ctrlDB.getFascicoloSanitario(db,'CLDFNC42P24G082R').then( (ret) => {
               logger.log(JSON.stringify(ret))
               tree = new jTree.Tree (ret,'CLDFNC42P24G082R');
             }    )
-         logger.info(" getFascicoloSanitario fine");
-         
-         //insertData(db);
-         //viewData(db);
       } catch (error) {
         logger.error('Errore durante la gestione del database:', error);
 
@@ -84,13 +101,13 @@ readline.question('Seleziona test?  ' +
       }   */   
       break;
 
-    case '2':
+    case  menu[4].id:
       test02();
       break;
-    case '3':
+    case  menu[5].id:
       test03();
       break;
-    case '4':
+    case  menu[6].id:
       test04();
       break;
     default:

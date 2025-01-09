@@ -2,7 +2,7 @@
 const fs = require('fs');
 const logger = require('../Logger');
 const ctrlShFile = require("../controller/controllerShellFile");
-const cfg = require('../config/config').config;
+const cfg = require('../config');
 
 const {Nodes, buildTree} = require('../utils/pathToJsonTree');
 
@@ -47,7 +47,7 @@ function popola(db,user_cf) {
       db.run('ROLLBACK;');
       logger.error(" esito:" +error + " \n query =" + sqlStmnt);
     } else {
-      list  = ctrlShFile.getListDirFile(cfg.home_path_doc+ '/' + user_cf)
+      list  = ctrlShFile.getListDirFile(cfg.HOME_PATH_DOC+ '/' + user_cf)
       readList (db,list.children,user_cf,user_cf,user_cf);
       db.run('COMMIT;');
     }

@@ -6,5 +6,6 @@ npm install winston
 npm i nodejs-base64-converter
 npm i get-windows-shortcut-properties
 npm i cors
+npm i dotenv
 
 
