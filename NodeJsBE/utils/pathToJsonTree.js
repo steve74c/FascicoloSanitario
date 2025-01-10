@@ -64,11 +64,9 @@ class Tree {
                     return this.addNode(nodetree[posElement].children,arrPathNode,nodetree[posElement].name,nodeToAdd)
                 }
             } 
-            else 
-                logger.log('       --> EXIT IF  nodetree');
+            //else logger.log('       --> EXIT IF  nodetree');
         }
-        else
-            logger.log('       --> EXIT IF  arrPathNode');
+        //else logger.log('       --> EXIT IF  arrPathNode');
 
         return nodetree;
 

@@ -8,6 +8,8 @@ const logger = require("./Logger");
 const { create, createDatabase, insertData, viewData } = require('./db/dbSqLite');
 const { crea, popola } = require('./db/schemaDB');
 
+
+process.env.NODE_ENV = 'work'
 var cfg = require('./config');
 // logger.info("TEST cfg.HOME_PATH_DOC = " +JSON.stringify(cfg));
 const sqlite3 = require('sqlite3').verbose();

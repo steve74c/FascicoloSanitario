@@ -8,9 +8,12 @@ import { DivSplitResizable } from 'src/componets/div-split-resizable/div-split-r
 import { DivLeftComponentNew } from 'src/componets/div-left-new/div-left-new.component';
 import { DivRightNewComponent } from 'src/componets/div-right-new/div-right.component';
 import { NgxtTreecontrolComponent } from 'src/componets/ngxt-treecontrol/ngxt-treecontrol.component';
-import { PdfViewerModule } from 'ng2-pdf-viewer'; // <- import 
+import { PdfViewerModule } from 'ng2-pdf-viewer'; // <- import
 import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
 import { provideHttpClient } from '@angular/common/http';
+import { DivHeaderComponent } from 'src/componets/div-header/div-header.component';
+
+//import { DivHeaderComponent } from 'src/componets/div-header/div-header.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,8 @@ import { provideHttpClient } from '@angular/common/http';
     DivSplitResizable,
     DivLeftComponentNew,
     DivRightNewComponent,
-    NgxtTreecontrolComponent
+    NgxtTreecontrolComponent,
+    DivHeaderComponent
   ],
   imports: [
     BrowserModule,

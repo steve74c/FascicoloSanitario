@@ -44,29 +44,22 @@ router.get(arr_uri['API-LIST_DIR_TREE'], async (req, res) => { get(req, res, arr
 
 
 router.get(arr_uri['SQL-LIST_DIR_TREE'], async (req, res) => { 
-    
     get(req, res, arr_uri['API-LIST_DIR_TREE'], ctrlDB.getFascicoloSanitario(db,'CLDFNC42P24G082R')
        .then( (ret) => {  
         //const tree = new jTree.Tree(ret,'CLDFNC42P24G082R'); 
         return JSON.stringify(new jTree.Tree(ret,'CLDFNC42P24G082R').getTree()[0]) }) 
-       
       ) 
        }
-       
 );
 
-
 router.post(arr_uri['PDF-FILE_NAME_B64'], async (req, res) => { 
-  logger.info(req.body.path);
-      if (!req.body) 
-          return res.status(400).send({ error: 'No body found in the request' });
-      ctrlPdfFile.base64_encode(req, res);
-      /*
-                  res.status(200).json({
-                      status: 'success',
-                      fileName: "system_path"
-                    });
-                    */
+  //logger.info(req.body.path);
+  if (!req.body) 
+      return res.status(400).send({ error: 'No body found in the request' });
+  
+  ctrlPdfFile.base64_encode(req, res)
+             .then(base64String => {res.status(200).json({status: 'success', base64: base64String, });})
+             .catch(error => {logger.error(error); });
 });
 
 

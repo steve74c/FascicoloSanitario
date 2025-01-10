@@ -48,8 +48,12 @@ function popola(db,user_cf) {
       logger.error(" esito:" +error + " \n query =" + sqlStmnt);
     } else {
       list  = ctrlShFile.getListDirFile(cfg.HOME_PATH_DOC+ '/' + user_cf)
-      readList (db,list.children,user_cf,user_cf,user_cf);
-      db.run('COMMIT;');
+      if (list) {
+        readList (db,list.children,user_cf,user_cf,user_cf);
+        db.run('COMMIT;');
+      }
+      else 
+        logger.info(" Nessun file trovato \n   -> path:" +cfg.HOME_PATH_DOC+ '/' + user_cf +"\n   -> list:" +JSON.stringify(list) );
     }
   });
   

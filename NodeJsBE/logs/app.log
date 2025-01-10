@@ -1,691 +1,99 @@
-[2025-01-25 09:07:56] error - uncaughtException: Cannot read properties of undefined (reading 'length')
-TypeError: Cannot read properties of undefined (reading 'length')
-    at pathtoRegexp (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\path-to-regexp\index.js:63:49)
-    at new Layer (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\express\lib\router\layer.js:45:17)
-    at Function.route (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\express\lib\router\index.js:505:15)
-    at proto.<computed> [as get] (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\express\lib\router\index.js:520:22)
-    at Object.<anonymous> (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\routes.js:40:8)
-    at Module._compile (node:internal/modules/cjs/loader:1358:14)
-    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
-    at Module.load (node:internal/modules/cjs/loader:1208:32)
-    at Module._load (node:internal/modules/cjs/loader:1024:12)
-    at Module.require (node:internal/modules/cjs/loader:1233:19)
-[2025-01-25 09:08:53] error - uncaughtException: Unexpected token ')'
-C:\Project\MyProject\FascicoloSanitario\NodeJsBE\routes.js:47
-);
-^
-
-SyntaxError: Unexpected token ')'
-    at wrapSafe (node:internal/modules/cjs/loader:1281:20)
-    at Module._compile (node:internal/modules/cjs/loader:1321:27)
-    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
-    at Module.load (node:internal/modules/cjs/loader:1208:32)
-    at Module._load (node:internal/modules/cjs/loader:1024:12)
-    at Module.require (node:internal/modules/cjs/loader:1233:19)
-    at require (node:internal/modules/helpers:179:18)
-    at Object.<anonymous> (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\server.js:3:16)
-    at Module._compile (node:internal/modules/cjs/loader:1358:14)
-    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
-[2025-01-25 09:09:28] error - uncaughtException: Cannot read properties of undefined (reading 'length')
-TypeError: Cannot read properties of undefined (reading 'length')
-    at pathtoRegexp (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\path-to-regexp\index.js:63:49)
-    at new Layer (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\express\lib\router\layer.js:45:17)
-    at Function.route (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\express\lib\router\index.js:505:15)
-    at proto.<computed> [as get] (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\express\lib\router\index.js:520:22)
-    at Object.<anonymous> (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\routes.js:40:8)
-    at Module._compile (node:internal/modules/cjs/loader:1358:14)
-    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
-    at Module.load (node:internal/modules/cjs/loader:1208:32)
-    at Module._load (node:internal/modules/cjs/loader:1024:12)
-    at Module.require (node:internal/modules/cjs/loader:1233:19)
-[2025-01-25 09:10:15] info  - server.js:7 - C:\Project\MyProject\FascicoloSanitario\NodeJsBE\environments
-[2025-01-25 09:10:15] info  - server.js:9 - development
-[2025-01-25 09:10:15] info  - server.js:10 - localhost
-[2025-01-25 09:10:15] info  - server.js:11 - 3000
-[2025-01-25 09:10:15] info  - server.js:41 - Server listening at http://localhost:3000
-[2025-01-25 09:10:29] info  - server.js:7 - C:\Project\MyProject\FascicoloSanitario\NodeJsBE\environments
-[2025-01-25 09:10:29] info  - server.js:9 - development
-[2025-01-25 09:10:29] info  - server.js:10 - localhost
-[2025-01-25 09:10:29] info  - server.js:11 - 3000
-[2025-01-25 09:10:29] info  - server.js:41 - Server listening at http://localhost:3000
-[2025-01-25 09:44:26] info  - server.js:7 - C:\Project\MyProject\FascicoloSanitario\NodeJsBE\environments
-[2025-01-25 09:44:26] info  - server.js:9 - work
-[2025-01-25 09:44:26] info  - server.js:10 - localhost
-[2025-01-25 09:44:26] info  - server.js:11 - 5000
-[2025-01-25 09:44:26] info  - server.js:41 - Server listening at http://localhost:5000
-[2025-01-25 09:58:40] error - uncaughtException: ctrlDB is not defined
-ReferenceError: ctrlDB is not defined
-    at C:\Project\MyProject\FascicoloSanitario\NodeJsBE\routes.js:41:49
-    at Layer.handle [as handle_request] (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\express\lib\router\layer.js:95:5)
-    at next (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\express\lib\router\route.js:149:13)
-    at Route.dispatch (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\express\lib\router\route.js:119:3)
-    at Layer.handle [as handle_request] (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\express\lib\router\layer.js:95:5)
-    at C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\express\lib\router\index.js:284:15
-    at Function.process_params (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\express\lib\router\index.js:346:12)
-    at next (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\express\lib\router\index.js:280:10)
-    at Function.handle (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\express\lib\router\index.js:175:3)
-    at router (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\express\lib\router\index.js:47:12)
-[2025-01-25 10:00:10] error - uncaughtException: Cannot read properties of undefined (reading 'PATH_DB')
-TypeError: Cannot read properties of undefined (reading 'PATH_DB')
-    at Object.<anonymous> (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\controller\controllerDB.js:5:37)
-    at Module._compile (node:internal/modules/cjs/loader:1358:14)
-    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
-    at Module.load (node:internal/modules/cjs/loader:1208:32)
-    at Module._load (node:internal/modules/cjs/loader:1024:12)
-    at Module.require (node:internal/modules/cjs/loader:1233:19)
-    at require (node:internal/modules/helpers:179:18)
-    at Object.<anonymous> (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\routes.js:8:16)
-    at Module._compile (node:internal/modules/cjs/loader:1358:14)
-    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
-[2025-01-25 10:02:21] error - uncaughtException: Cannot find module ' ../config'
-Require stack:
-- C:\Project\MyProject\FascicoloSanitario\NodeJsBE\controller\controllerDB.js
-- C:\Project\MyProject\FascicoloSanitario\NodeJsBE\routes.js
-- C:\Project\MyProject\FascicoloSanitario\NodeJsBE\server.js
-Error: Cannot find module ' ../config'
-Require stack:
-- C:\Project\MyProject\FascicoloSanitario\NodeJsBE\controller\controllerDB.js
-- C:\Project\MyProject\FascicoloSanitario\NodeJsBE\routes.js
-- C:\Project\MyProject\FascicoloSanitario\NodeJsBE\server.js
-    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
-    at Module._load (node:internal/modules/cjs/loader:986:27)
-    at Module.require (node:internal/modules/cjs/loader:1233:19)
-    at require (node:internal/modules/helpers:179:18)
-    at Object.<anonymous> (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\controller\controllerDB.js:2:13)
-    at Module._compile (node:internal/modules/cjs/loader:1358:14)
-    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
-    at Module.load (node:internal/modules/cjs/loader:1208:32)
-    at Module._load (node:internal/modules/cjs/loader:1024:12)
-    at Module.require (node:internal/modules/cjs/loader:1233:19)
-[2025-01-25 10:03:12] info  - server.js:7 - C:\Project\MyProject\FascicoloSanitario\NodeJsBE\environments
-[2025-01-25 10:03:12] info  - server.js:9 - work
-[2025-01-25 10:03:12] info  - server.js:10 - localhost
-[2025-01-25 10:03:12] info  - server.js:11 - 5000
-[2025-01-25 10:03:12] info  - server.js:41 - Server listening at http://localhost:5000
-[2025-01-25 10:03:12] info  - controllerDB.js:8 - Connected to the SQlite database.
-[2025-01-25 10:03:22] error - uncaughtException: db is not defined
-ReferenceError: db is not defined
-    at C:\Project\MyProject\FascicoloSanitario\NodeJsBE\routes.js:41:78
-    at Layer.handle [as handle_request] (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\express\lib\router\layer.js:95:5)
-    at next (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\express\lib\router\route.js:149:13)
-    at Route.dispatch (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\express\lib\router\route.js:119:3)
-    at Layer.handle [as handle_request] (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\express\lib\router\layer.js:95:5)
-    at C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\express\lib\router\index.js:284:15
-    at Function.process_params (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\express\lib\router\index.js:346:12)
-    at next (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\express\lib\router\index.js:280:10)
-    at Function.handle (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\express\lib\router\index.js:175:3)
-    at router (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\express\lib\router\index.js:47:12)
-[2025-01-25 10:05:41] error - uncaughtException: sqlite3 is not defined
-ReferenceError: sqlite3 is not defined
-    at Object.<anonymous> (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\routes.js:22:12)
-    at Module._compile (node:internal/modules/cjs/loader:1358:14)
-    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
-    at Module.load (node:internal/modules/cjs/loader:1208:32)
-    at Module._load (node:internal/modules/cjs/loader:1024:12)
-    at Module.require (node:internal/modules/cjs/loader:1233:19)
-    at require (node:internal/modules/helpers:179:18)
-    at Object.<anonymous> (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\server.js:3:16)
-    at Module._compile (node:internal/modules/cjs/loader:1358:14)
-    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
-[2025-01-25 10:05:41] info  - controllerDB.js:8 - Connected to the SQlite database.
-[2025-01-25 10:06:16] info  - server.js:7 - C:\Project\MyProject\FascicoloSanitario\NodeJsBE\environments
-[2025-01-25 10:06:16] info  - server.js:9 - work
-[2025-01-25 10:06:16] info  - server.js:10 - localhost
-[2025-01-25 10:06:16] info  - server.js:11 - 5000
-[2025-01-25 10:06:16] info  - server.js:41 - Server listening at http://localhost:5000
-[2025-01-25 10:06:16] info  - controllerDB.js:8 - Connected to the SQlite database.
-[2025-01-25 10:06:19] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 10:06:19] error - uncaughtException: jTree is not defined
-ReferenceError: jTree is not defined
-    at C:\Project\MyProject\FascicoloSanitario\NodeJsBE\routes.js:47:27
-[2025-01-25 10:07:20] info  - server.js:7 - C:\Project\MyProject\FascicoloSanitario\NodeJsBE\environments
-[2025-01-25 10:07:20] info  - server.js:9 - work
-[2025-01-25 10:07:20] info  - server.js:10 - localhost
-[2025-01-25 10:07:20] info  - server.js:11 - 5000
-[2025-01-25 10:07:20] info  - server.js:41 - Server listening at http://localhost:5000
-[2025-01-25 10:07:20] info  - controllerDB.js:8 - Connected to the SQlite database.
-[2025-01-25 10:07:25] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 10:10:14] info  - server.js:7 - C:\Project\MyProject\FascicoloSanitario\NodeJsBE\environments
-[2025-01-25 10:10:14] info  - server.js:9 - work
-[2025-01-25 10:10:14] info  - server.js:10 - localhost
-[2025-01-25 10:10:14] info  - server.js:11 - 5000
-[2025-01-25 10:10:14] info  - server.js:41 - Server listening at http://localhost:5000
-[2025-01-25 10:10:14] info  - controllerDB.js:8 - Connected to the SQlite database.
-[2025-01-25 10:10:16] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 10:11:02] info  - server.js:7 - C:\Project\MyProject\FascicoloSanitario\NodeJsBE\environments
-[2025-01-25 10:11:02] info  - server.js:9 - work
-[2025-01-25 10:11:02] info  - server.js:10 - localhost
-[2025-01-25 10:11:02] info  - server.js:11 - 5000
-[2025-01-25 10:11:02] info  - server.js:41 - Server listening at http://localhost:5000
-[2025-01-25 10:11:02] info  - controllerDB.js:8 - Connected to the SQlite database.
-[2025-01-25 10:11:06] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 10:12:53] info  - server.js:7 - C:\Project\MyProject\FascicoloSanitario\NodeJsBE\environments
-[2025-01-25 10:12:53] info  - server.js:9 - work
-[2025-01-25 10:12:53] info  - server.js:10 - localhost
-[2025-01-25 10:12:53] info  - server.js:11 - 5000
-[2025-01-25 10:12:53] info  - server.js:41 - Server listening at http://localhost:5000
-[2025-01-25 10:12:53] info  - controllerDB.js:8 - Connected to the SQlite database.
-[2025-01-25 10:12:54] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 10:12:57] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 10:13:34] info  - server.js:7 - C:\Project\MyProject\FascicoloSanitario\NodeJsBE\environments
-[2025-01-25 10:13:34] info  - server.js:9 - work
-[2025-01-25 10:13:34] info  - server.js:10 - localhost
-[2025-01-25 10:13:34] info  - server.js:11 - 5000
-[2025-01-25 10:13:34] info  - server.js:41 - Server listening at http://localhost:5000
-[2025-01-25 10:13:34] info  - controllerDB.js:8 - Connected to the SQlite database.
-[2025-01-25 10:13:36] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 10:14:44] error - uncaughtException: Unexpected end of input
-C:\Project\MyProject\FascicoloSanitario\NodeJsBE\routes.js:68
-
-
-
-SyntaxError: Unexpected end of input
-    at wrapSafe (node:internal/modules/cjs/loader:1281:20)
-    at Module._compile (node:internal/modules/cjs/loader:1321:27)
-    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
-    at Module.load (node:internal/modules/cjs/loader:1208:32)
-    at Module._load (node:internal/modules/cjs/loader:1024:12)
-    at Module.require (node:internal/modules/cjs/loader:1233:19)
-    at require (node:internal/modules/helpers:179:18)
-    at Object.<anonymous> (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\server.js:3:16)
-    at Module._compile (node:internal/modules/cjs/loader:1358:14)
-    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
-[2025-01-25 10:15:04] error - uncaughtException: Unexpected end of input
-C:\Project\MyProject\FascicoloSanitario\NodeJsBE\routes.js:68
-
-
-
-SyntaxError: Unexpected end of input
-    at wrapSafe (node:internal/modules/cjs/loader:1281:20)
-    at Module._compile (node:internal/modules/cjs/loader:1321:27)
-    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
-    at Module.load (node:internal/modules/cjs/loader:1208:32)
-    at Module._load (node:internal/modules/cjs/loader:1024:12)
-    at Module.require (node:internal/modules/cjs/loader:1233:19)
-    at require (node:internal/modules/helpers:179:18)
-    at Object.<anonymous> (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\server.js:3:16)
-    at Module._compile (node:internal/modules/cjs/loader:1358:14)
-    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
-[2025-01-25 10:15:39] info  - server.js:7 - C:\Project\MyProject\FascicoloSanitario\NodeJsBE\environments
-[2025-01-25 10:15:39] info  - server.js:9 - work
-[2025-01-25 10:15:39] info  - server.js:10 - localhost
-[2025-01-25 10:15:39] info  - server.js:11 - 5000
-[2025-01-25 10:15:39] info  - server.js:41 - Server listening at http://localhost:5000
-[2025-01-25 10:15:39] info  - controllerDB.js:8 - Connected to the SQlite database.
-[2025-01-25 10:15:42] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 10:15:42] error - uncaughtException: Cannot set headers after they are sent to the client
-Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
-    at ServerResponse.setHeader (node:_http_outgoing:659:11)
-    at ServerResponse.header (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\express\lib\response.js:795:10)
-    at ServerResponse.send (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\express\lib\response.js:175:12)
-    at ServerResponse.json (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\express\lib\response.js:279:15)
-    at ServerResponse.send (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\express\lib\response.js:163:21)
-    at C:\Project\MyProject\FascicoloSanitario\NodeJsBE\routes.js:51:25
-[2025-01-25 10:17:49] info  - server.js:7 - C:\Project\MyProject\FascicoloSanitario\NodeJsBE\environments
-[2025-01-25 10:17:49] info  - server.js:9 - work
-[2025-01-25 10:17:49] info  - server.js:10 - localhost
-[2025-01-25 10:17:49] info  - server.js:11 - 5000
-[2025-01-25 10:17:49] info  - server.js:41 - Server listening at http://localhost:5000
-[2025-01-25 10:17:49] info  - controllerDB.js:8 - Connected to the SQlite database.
-[2025-01-25 10:17:50] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 10:19:04] info  - server.js:7 - C:\Project\MyProject\FascicoloSanitario\NodeJsBE\environments
-[2025-01-25 10:19:04] info  - server.js:9 - work
-[2025-01-25 10:19:04] info  - server.js:10 - localhost
-[2025-01-25 10:19:04] info  - server.js:11 - 5000
-[2025-01-25 10:19:04] info  - server.js:41 - Server listening at http://localhost:5000
-[2025-01-25 10:19:04] info  - controllerDB.js:8 - Connected to the SQlite database.
-[2025-01-25 10:19:07] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 10:19:43] info  - server.js:7 - C:\Project\MyProject\FascicoloSanitario\NodeJsBE\environments
-[2025-01-25 10:19:43] info  - server.js:9 - work
-[2025-01-25 10:19:43] info  - server.js:10 - localhost
-[2025-01-25 10:19:43] info  - server.js:11 - 5000
-[2025-01-25 10:19:43] info  - server.js:41 - Server listening at http://localhost:5000
-[2025-01-25 10:19:43] info  - controllerDB.js:8 - Connected to the SQlite database.
-[2025-01-25 10:19:51] info  - server.js:7 - C:\Project\MyProject\FascicoloSanitario\NodeJsBE\environments
-[2025-01-25 10:19:51] info  - server.js:9 - work
-[2025-01-25 10:19:51] info  - server.js:10 - localhost
-[2025-01-25 10:19:51] info  - server.js:11 - 5000
-[2025-01-25 10:19:51] info  - server.js:41 - Server listening at http://localhost:5000
-[2025-01-25 10:19:51] info  - controllerDB.js:8 - Connected to the SQlite database.
-[2025-01-25 10:19:51] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 10:27:44] info  - server.js:7 - C:\Project\MyProject\FascicoloSanitario\NodeJsBE\environments
-[2025-01-25 10:27:44] info  - server.js:9 - work
-[2025-01-25 10:27:44] info  - server.js:10 - localhost
-[2025-01-25 10:27:44] info  - server.js:11 - 5000
-[2025-01-25 10:27:44] info  - server.js:41 - Server listening at http://localhost:5000
-[2025-01-25 10:27:44] info  - controllerDB.js:8 - Connected to the SQlite database.
-[2025-01-25 10:27:49] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 10:29:37] info  - server.js:7 - C:\Project\MyProject\FascicoloSanitario\NodeJsBE\environments
-[2025-01-25 10:29:37] info  - server.js:9 - work
-[2025-01-25 10:29:37] info  - server.js:10 - localhost
-[2025-01-25 10:29:37] info  - server.js:11 - 5000
-[2025-01-25 10:29:37] info  - server.js:41 - Server listening at http://localhost:5000
-[2025-01-25 10:29:37] info  - controllerDB.js:8 - Connected to the SQlite database.
-[2025-01-25 10:29:45] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 10:34:09] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 10:34:51] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 10:34:58] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 10:36:39] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 10:36:59] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 10:37:09] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 10:37:11] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 10:37:41] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 10:38:04] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 10:38:16] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 10:38:18] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 10:38:34] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 10:39:37] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 10:39:38] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 10:40:21] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 10:40:37] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024
-[2025-01-25 10:40:37] error - controllerBase64.js:42 - CLDFNC42P24G082R\anno\2024
-[2025-01-25 10:40:37] error - controllerBase64.js:43 ENOENT: no such file or directory, open 'C:\Project\MyProject\FascicoloSanitario\NodeJsBE\CLDFNC42P24G082R\anno\2024'
-[2025-01-25 10:44:57] info  - server.js:7 - C:\Project\MyProject\FascicoloSanitario\NodeJsBE\environments
-[2025-01-25 10:44:57] info  - server.js:9 - work
-[2025-01-25 10:44:57] info  - server.js:10 - localhost
-[2025-01-25 10:44:57] info  - server.js:11 - 5000
-[2025-01-25 10:44:57] info  - server.js:41 - Server listening at http://localhost:5000
-[2025-01-25 10:44:57] info  - controllerDB.js:8 - Connected to the SQlite database.
-[2025-01-25 10:45:06] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 10:45:09] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024
-[2025-01-25 10:45:09] error - controllerBase64.js:42 - CLDFNC42P24G082R\anno\2024
-[2025-01-25 10:45:09] error - controllerBase64.js:43 ENOENT: no such file or directory, open 'C:\Project\MyProject\FascicoloSanitario\NodeJsBE\CLDFNC42P24G082R\anno\2024'
-[2025-01-25 10:48:05] info  - server.js:7 - C:\Project\MyProject\FascicoloSanitario\NodeJsBE\environments
-[2025-01-25 10:48:05] info  - server.js:9 - work
-[2025-01-25 10:48:05] info  - server.js:10 - localhost
-[2025-01-25 10:48:05] info  - server.js:11 - 5000
-[2025-01-25 10:48:06] info  - server.js:41 - Server listening at http://localhost:5000
-[2025-01-25 10:48:06] info  - controllerDB.js:8 - Connected to the SQlite database.
-[2025-01-25 10:48:06] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 10:48:10] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024
-[2025-01-25 10:48:10] error - controllerBase64.js:44 - CLDFNC42P24G082R\anno\2024
-[2025-01-25 10:48:10] error - controllerBase64.js:45 ENOENT: no such file or directory, open 'C:\Project\MyProject\FascicoloSanitario\NodeJsBE\CLDFNC42P24G082R\anno\2024'
-[2025-01-25 14:07:30] info  - server.js:7 - C:\Project\MyProject\FascicoloSanitario\NodeJsBE\environments
-[2025-01-25 14:07:30] info  - server.js:9 - work
-[2025-01-25 14:07:30] info  - server.js:10 - localhost
-[2025-01-25 14:07:30] info  - server.js:11 - 5000
-[2025-01-25 14:07:30] info  - server.js:41 - Server listening at http://localhost:5000
-[2025-01-25 14:07:30] info  - controllerDB.js:8 - Connected to the SQlite database.
-[2025-01-25 14:07:35] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 14:07:40] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024
-[2025-01-25 14:07:40] error - controllerBase64.js:44 - CLDFNC42P24G082R\anno\2024
-[2025-01-25 14:07:40] error - controllerBase64.js:45 ENOENT: no such file or directory, open 'C:\Project\MyProject\FascicoloSanitario\NodeJsBE\CLDFNC42P24G082R\anno\2024'
-[2025-01-25 14:08:41] info  - server.js:7 - C:\Project\MyProject\FascicoloSanitario\NodeJsBE\environments
-[2025-01-25 14:08:41] info  - server.js:9 - work
-[2025-01-25 14:08:41] info  - server.js:10 - localhost
-[2025-01-25 14:08:41] info  - server.js:11 - 5000
-[2025-01-25 14:08:41] info  - server.js:41 - Server listening at http://localhost:5000
-[2025-01-25 14:08:41] info  - controllerDB.js:8 - Connected to the SQlite database.
-[2025-01-25 14:08:50] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 14:08:53] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024
-[2025-01-25 14:08:53] error - controllerBase64.js:46 - CLDFNC42P24G082R\anno\2024
-[2025-01-25 14:08:53] error - controllerBase64.js:47 ENOENT: no such file or directory, open 'C:\Project\MyProject\FascicoloSanitario\NodeJsBE\CLDFNC42P24G082R\anno\2024'
-[2025-01-25 14:10:28] info  - server.js:7 - C:\Project\MyProject\FascicoloSanitario\NodeJsBE\environments
-[2025-01-25 14:10:28] info  - server.js:9 - work
-[2025-01-25 14:10:28] info  - server.js:10 - localhost
-[2025-01-25 14:10:28] info  - server.js:11 - 5000
-[2025-01-25 14:10:28] info  - server.js:41 - Server listening at http://localhost:5000
-[2025-01-25 14:10:28] info  - controllerDB.js:8 - Connected to the SQlite database.
-[2025-01-25 14:10:28] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 14:10:31] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024
-[2025-01-25 14:10:31] error - controllerBase64.js:50 Invalid regular expression: /\/g: \ at end of pattern
-[2025-01-25 14:11:35] info  - server.js:7 - C:\Project\MyProject\FascicoloSanitario\NodeJsBE\environments
-[2025-01-25 14:11:35] info  - server.js:9 - work
-[2025-01-25 14:11:35] info  - server.js:10 - localhost
-[2025-01-25 14:11:35] info  - server.js:11 - 5000
-[2025-01-25 14:11:35] info  - server.js:41 - Server listening at http://localhost:5000
-[2025-01-25 14:11:35] info  - controllerDB.js:8 - Connected to the SQlite database.
-[2025-01-25 14:11:35] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 14:11:42] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024
-[2025-01-25 14:11:42] error - controllerBase64.js:46 - C:\\Project\\MyProject\\DOCCLDFNC42P24G082R\anno\2024
-[2025-01-25 14:11:42] error - controllerBase64.js:47 ENOENT: no such file or directory, open 'C:\Project\MyProject\DOCCLDFNC42P24G082R\anno\2024'
-[2025-01-25 14:12:15] info  - server.js:7 - C:\Project\MyProject\FascicoloSanitario\NodeJsBE\environments
-[2025-01-25 14:12:15] info  - server.js:9 - work
-[2025-01-25 14:12:15] info  - server.js:10 - localhost
-[2025-01-25 14:12:15] info  - server.js:11 - 5000
-[2025-01-25 14:12:15] info  - server.js:41 - Server listening at http://localhost:5000
-[2025-01-25 14:12:15] info  - controllerDB.js:8 - Connected to the SQlite database.
-[2025-01-25 14:12:15] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 14:12:17] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 14:12:20] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024
-[2025-01-25 14:12:20] error - controllerBase64.js:50 Invalid regular expression: /\/g: \ at end of pattern
-[2025-01-25 14:13:06] info  - server.js:7 - C:\Project\MyProject\FascicoloSanitario\NodeJsBE\environments
-[2025-01-25 14:13:06] info  - server.js:9 - work
-[2025-01-25 14:13:06] info  - server.js:10 - localhost
-[2025-01-25 14:13:06] info  - server.js:11 - 5000
-[2025-01-25 14:13:06] info  - server.js:41 - Server listening at http://localhost:5000
-[2025-01-25 14:13:06] info  - controllerDB.js:8 - Connected to the SQlite database.
-[2025-01-25 14:13:10] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 14:13:13] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024
-[2025-01-25 14:13:13] error - controllerBase64.js:50 Invalid regular expression: /\/g: \ at end of pattern
-[2025-01-25 14:13:42] info  - server.js:7 - C:\Project\MyProject\FascicoloSanitario\NodeJsBE\environments
-[2025-01-25 14:13:42] info  - server.js:9 - work
-[2025-01-25 14:13:42] info  - server.js:10 - localhost
-[2025-01-25 14:13:42] info  - server.js:11 - 5000
-[2025-01-25 14:13:42] info  - server.js:41 - Server listening at http://localhost:5000
-[2025-01-25 14:13:42] info  - controllerDB.js:8 - Connected to the SQlite database.
-[2025-01-25 14:13:44] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 14:13:47] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024
-[2025-01-25 14:13:47] error - controllerBase64.js:46 - C:\\Project\\MyProject\\DOC\CLDFNC42P24G082R\\anno\\2024
-[2025-01-25 14:13:47] error - controllerBase64.js:47 EISDIR: illegal operation on a directory, read
-[2025-01-25 14:15:02] info  - server.js:7 - C:\Project\MyProject\FascicoloSanitario\NodeJsBE\environments
-[2025-01-25 14:15:02] info  - server.js:9 - work
-[2025-01-25 14:15:02] info  - server.js:10 - localhost
-[2025-01-25 14:15:02] info  - server.js:11 - 5000
-[2025-01-25 14:15:02] info  - server.js:41 - Server listening at http://localhost:5000
-[2025-01-25 14:15:02] info  - controllerDB.js:8 - Connected to the SQlite database.
-[2025-01-25 14:15:03] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 14:15:06] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024
-[2025-01-25 14:15:06] error - controllerBase64.js:46 - C:\\Project\\MyProject\\DOC\CLDFNC42P24G082R\\anno\\2024
-[2025-01-25 14:15:06] error - controllerBase64.js:47 EISDIR: illegal operation on a directory, read
-[2025-01-25 14:38:53] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 14:39:00] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 14:39:10] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 14:39:14] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo_evidenziato.pdf
-[2025-01-25 14:42:41] info  - server.js:7 - C:\Project\MyProject\FascicoloSanitario\NodeJsBE\environments
-[2025-01-25 14:42:41] info  - server.js:9 - work
-[2025-01-25 14:42:41] info  - server.js:10 - localhost
-[2025-01-25 14:42:41] info  - server.js:11 - 5000
-[2025-01-25 14:42:41] info  - server.js:41 - Server listening at http://localhost:5000
-[2025-01-25 14:42:41] info  - controllerDB.js:8 - Connected to the SQlite database.
-[2025-01-25 14:42:44] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 14:42:46] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo.pdf
-[2025-01-25 18:20:51] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 18:21:10] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo_evidenziato.pdf
-[2025-01-25 18:22:16] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 18:22:19] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo.pdf
-[2025-01-25 18:22:25] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo_evidenziato.pdf
-[2025-01-25 18:23:47] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo.pdf
-[2025-01-25 18:27:56] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 18:27:57] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 18:28:09] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo.pdf
-[2025-01-25 18:29:48] info  - server.js:7 - C:\Project\MyProject\FascicoloSanitario\NodeJsBE\environments
-[2025-01-25 18:29:48] info  - server.js:9 - work
-[2025-01-25 18:29:48] info  - server.js:10 - localhost
-[2025-01-25 18:29:48] info  - server.js:11 - 5000
-[2025-01-25 18:29:48] info  - server.js:41 - Server listening at http://localhost:5000
-[2025-01-25 18:29:48] info  - controllerDB.js:8 - Connected to the SQlite database.
-[2025-01-25 21:36:45] info  - server.js:7 - C:\Project\MyProject\FascicoloSanitario\NodeJsBE\environments
-[2025-01-25 21:36:45] info  - server.js:9 - work
-[2025-01-25 21:36:45] info  - server.js:10 - localhost
-[2025-01-25 21:36:45] info  - server.js:11 - 5000
-[2025-01-25 21:36:45] info  - server.js:41 - Server listening at http://localhost:5000
-[2025-01-25 21:36:45] info  - controllerDB.js:8 - Connected to the SQlite database.
-[2025-01-25 21:41:01] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 21:41:11] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 21:41:18] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo.pdf
-[2025-01-25 21:41:18] error - controllerBase64.js:51 Invalid regular expression: //\/\/g: \ at end of pattern
-[2025-01-25 21:41:29] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo_evidenziato.pdf
-[2025-01-25 21:41:29] error - controllerBase64.js:51 Invalid regular expression: //\/\/g: \ at end of pattern
-[2025-01-25 21:41:45] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo.pdf
-[2025-01-25 21:41:45] error - controllerBase64.js:51 Invalid regular expression: //\/\/g: \ at end of pattern
-[2025-01-25 21:43:14] info  - server.js:7 - C:\Project\MyProject\FascicoloSanitario\NodeJsBE\environments
-[2025-01-25 21:43:14] info  - server.js:9 - work
-[2025-01-25 21:43:14] info  - server.js:10 - localhost
-[2025-01-25 21:43:14] info  - server.js:11 - 5000
-[2025-01-25 21:43:14] info  - server.js:41 - Server listening at http://localhost:5000
-[2025-01-25 21:43:14] info  - controllerDB.js:8 - Connected to the SQlite database.
-[2025-01-25 21:43:15] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 21:43:19] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo.pdf
-[2025-01-25 21:56:49] info  - server.js:7 - C:\Project\MyProject\FascicoloSanitario\NodeJsBE\environments
-[2025-01-25 21:56:49] info  - server.js:9 - work
-[2025-01-25 21:56:49] info  - server.js:10 - localhost
-[2025-01-25 21:56:49] info  - server.js:11 - 5000
-[2025-01-25 21:56:49] info  - server.js:41 - Server listening at http://localhost:5000
-[2025-01-25 21:56:49] info  - controllerDB.js:8 - Connected to the SQlite database.
-[2025-01-25 21:56:54] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 21:56:58] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo.pdf
-[2025-01-25 21:56:58] error - controllerBase64.js:48 - C:\\Project\\MyProject\\DOC\CLDFNC42P24G082R\anno\2024\2024-06-25-XXX-FSA-Prelievo.pdf
-[2025-01-25 21:56:58] error - controllerBase64.js:49 res.status(...).josn is not a function
-[2025-01-25 21:57:01] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo_evidenziato.pdf
-[2025-01-25 21:57:01] error - controllerBase64.js:48 - C:\\Project\\MyProject\\DOC\CLDFNC42P24G082R\anno\2024\2024-06-25-XXX-FSA-Prelievo_evidenziato.pdf
-[2025-01-25 21:57:01] error - controllerBase64.js:49 res.status(...).josn is not a function
-[2025-01-25 21:58:44] info  - server.js:7 - C:\Project\MyProject\FascicoloSanitario\NodeJsBE\environments
-[2025-01-25 21:58:44] info  - server.js:9 - work
-[2025-01-25 21:58:44] info  - server.js:10 - localhost
-[2025-01-25 21:58:44] info  - server.js:11 - 5000
-[2025-01-25 21:58:44] info  - server.js:41 - Server listening at http://localhost:5000
-[2025-01-25 21:58:44] info  - controllerDB.js:8 - Connected to the SQlite database.
-[2025-01-25 21:59:31] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo.pdf
-[2025-01-25 22:05:14] info  - server.js:7 - C:\Project\MyProject\FascicoloSanitario\NodeJsBE\environments
-[2025-01-25 22:05:14] info  - server.js:9 - work
-[2025-01-25 22:05:14] info  - server.js:10 - localhost
-[2025-01-25 22:05:14] info  - server.js:11 - 5000
-[2025-01-25 22:05:14] info  - server.js:41 - Server listening at http://localhost:5000
-[2025-01-25 22:05:14] info  - controllerDB.js:8 - Connected to the SQlite database.
-[2025-01-25 22:05:19] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:05:29] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo.pdf
-[2025-01-25 22:05:29] error - controllerBase64.js:53 - C:\\Project\\MyProject\\DOC\CLDFNC42P24G082R\anno\2024\2024-06-25-XXX-FSA-Prelievo.pdf
-[2025-01-25 22:05:29] error - controllerBase64.js:54 base64File is not defined
-[2025-01-25 22:06:08] info  - server.js:7 - C:\Project\MyProject\FascicoloSanitario\NodeJsBE\environments
-[2025-01-25 22:06:08] info  - server.js:9 - work
-[2025-01-25 22:06:08] info  - server.js:10 - localhost
-[2025-01-25 22:06:08] info  - server.js:11 - 5000
-[2025-01-25 22:06:08] info  - server.js:41 - Server listening at http://localhost:5000
-[2025-01-25 22:06:08] info  - controllerDB.js:8 - Connected to the SQlite database.
-[2025-01-25 22:06:08] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:06:11] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo.pdf
-[2025-01-25 22:06:57] info  - server.js:7 - C:\Project\MyProject\FascicoloSanitario\NodeJsBE\environments
-[2025-01-25 22:06:57] info  - server.js:9 - work
-[2025-01-25 22:06:57] info  - server.js:10 - localhost
-[2025-01-25 22:06:57] info  - server.js:11 - 5000
-[2025-01-25 22:06:57] info  - server.js:41 - Server listening at http://localhost:5000
-[2025-01-25 22:06:57] info  - controllerDB.js:8 - Connected to the SQlite database.
-[2025-01-25 22:07:19] info  - server.js:7 - C:\Project\MyProject\FascicoloSanitario\NodeJsBE\environments
-[2025-01-25 22:07:19] info  - server.js:9 - work
-[2025-01-25 22:07:19] info  - server.js:10 - localhost
-[2025-01-25 22:07:19] info  - server.js:11 - 5000
-[2025-01-25 22:07:19] info  - server.js:41 - Server listening at http://localhost:5000
-[2025-01-25 22:07:19] info  - controllerDB.js:8 - Connected to the SQlite database.
-[2025-01-25 22:07:22] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo_evidenziato.pdf
-[2025-01-25 22:07:27] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:07:30] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo.pdf
-[2025-01-25 22:07:54] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:07:57] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:08:00] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:08:06] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:08:11] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo.pdf
-[2025-01-25 22:08:56] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:09:01] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo.pdf
-[2025-01-25 22:09:24] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:09:27] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo.pdf
-[2025-01-25 22:10:34] info  - server.js:7 - C:\Project\MyProject\FascicoloSanitario\NodeJsBE\environments
-[2025-01-25 22:10:34] info  - server.js:9 - work
-[2025-01-25 22:10:34] info  - server.js:10 - localhost
-[2025-01-25 22:10:34] info  - server.js:11 - 5000
-[2025-01-25 22:10:34] info  - server.js:41 - Server listening at http://localhost:5000
-[2025-01-25 22:10:34] info  - controllerDB.js:8 - Connected to the SQlite database.
-[2025-01-25 22:11:14] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo_evidenziato.pdf
-[2025-01-25 22:11:43] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:12:00] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:12:02] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:12:11] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:12:12] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:12:13] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:12:16] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo.pdf
-[2025-01-25 22:12:20] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo_evidenziato.pdf
-[2025-01-25 22:12:47] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:12:52] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:12:55] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo.pdf
-[2025-01-25 22:12:57] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo_evidenziato.pdf
-[2025-01-25 22:13:05] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:13:12] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo.pdf
-[2025-01-25 22:13:49] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:14:02] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:14:17] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:14:21] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:14:38] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:14:50] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:14:56] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo.pdf
-[2025-01-25 22:15:08] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:15:10] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:16:30] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:18:04] info  - server.js:7 - C:\Project\MyProject\FascicoloSanitario\NodeJsBE\environments
-[2025-01-25 22:18:04] info  - server.js:9 - work
-[2025-01-25 22:18:04] info  - server.js:10 - localhost
-[2025-01-25 22:18:04] info  - server.js:11 - 5000
-[2025-01-25 22:18:04] info  - server.js:41 - Server listening at http://localhost:5000
-[2025-01-25 22:18:04] info  - controllerDB.js:8 - Connected to the SQlite database.
-[2025-01-25 22:18:04] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:18:13] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo.pdf
-[2025-01-25 22:18:13] error - uncaughtException: system_path is not defined
-ReferenceError: system_path is not defined
-    at C:\Project\MyProject\FascicoloSanitario\NodeJsBE\routes.js:66:33
-    at Layer.handle [as handle_request] (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\express\lib\router\layer.js:95:5)
-    at next (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\express\lib\router\route.js:149:13)
-    at Route.dispatch (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\express\lib\router\route.js:119:3)
-    at Layer.handle [as handle_request] (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\express\lib\router\layer.js:95:5)
-    at C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\express\lib\router\index.js:284:15
-    at Function.process_params (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\express\lib\router\index.js:346:12)
-    at next (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\express\lib\router\index.js:280:10)
-    at Function.handle (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\express\lib\router\index.js:175:3)
-    at router (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\express\lib\router\index.js:47:12)
-[2025-01-25 22:18:45] info  - server.js:7 - C:\Project\MyProject\FascicoloSanitario\NodeJsBE\environments
-[2025-01-25 22:18:45] info  - server.js:9 - work
-[2025-01-25 22:18:45] info  - server.js:10 - localhost
-[2025-01-25 22:18:45] info  - server.js:11 - 5000
-[2025-01-25 22:18:45] info  - server.js:41 - Server listening at http://localhost:5000
-[2025-01-25 22:18:45] info  - controllerDB.js:8 - Connected to the SQlite database.
-[2025-01-25 22:18:46] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:18:50] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo_evidenziato.pdf
-[2025-01-25 22:19:15] info  - server.js:7 - C:\Project\MyProject\FascicoloSanitario\NodeJsBE\environments
-[2025-01-25 22:19:15] info  - server.js:9 - work
-[2025-01-25 22:19:15] info  - server.js:10 - localhost
-[2025-01-25 22:19:15] info  - server.js:11 - 5000
-[2025-01-25 22:19:15] info  - server.js:41 - Server listening at http://localhost:5000
-[2025-01-25 22:19:15] info  - controllerDB.js:8 - Connected to the SQlite database.
-[2025-01-25 22:19:17] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:19:51] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:21:20] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:22:06] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:22:30] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:24:30] info  - server.js:7 - C:\Project\MyProject\FascicoloSanitario\NodeJsBE\environments
-[2025-01-25 22:24:30] info  - server.js:9 - work
-[2025-01-25 22:24:30] info  - server.js:10 - localhost
-[2025-01-25 22:24:30] info  - server.js:11 - 5000
-[2025-01-25 22:24:30] info  - server.js:41 - Server listening at http://localhost:5000
-[2025-01-25 22:24:30] info  - controllerDB.js:8 - Connected to the SQlite database.
-[2025-01-25 22:24:50] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:25:00] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:25:42] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:25:59] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:26:32] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:27:24] info  - server.js:7 - C:\Project\MyProject\FascicoloSanitario\NodeJsBE\environments
-[2025-01-25 22:27:24] info  - server.js:9 - work
-[2025-01-25 22:27:24] info  - server.js:10 - localhost
-[2025-01-25 22:27:24] info  - server.js:11 - 5000
-[2025-01-25 22:27:24] info  - server.js:41 - Server listening at http://localhost:5000
-[2025-01-25 22:27:24] info  - controllerDB.js:8 - Connected to the SQlite database.
-[2025-01-25 22:27:27] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:27:30] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo.pdf
-[2025-01-25 22:28:05] info  - server.js:7 - C:\Project\MyProject\FascicoloSanitario\NodeJsBE\environments
-[2025-01-25 22:28:05] info  - server.js:9 - work
-[2025-01-25 22:28:05] info  - server.js:10 - localhost
-[2025-01-25 22:28:05] info  - server.js:11 - 5000
-[2025-01-25 22:28:05] info  - server.js:41 - Server listening at http://localhost:5000
-[2025-01-25 22:28:05] info  - controllerDB.js:8 - Connected to the SQlite database.
-[2025-01-25 22:28:05] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:28:06] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:28:08] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo.pdf
-[2025-01-25 22:28:44] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:28:51] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:29:08] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo.pdf
-[2025-01-25 22:29:20] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:29:24] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo.pdf
-[2025-01-25 22:29:44] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:29:48] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo.pdf
-[2025-01-25 22:30:12] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo_evidenziato.pdf
-[2025-01-25 22:35:37] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:35:41] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo.pdf
-[2025-01-25 22:37:23] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:37:27] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo.pdf
-[2025-01-25 22:38:14] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:38:18] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo.pdf
-[2025-01-25 22:38:49] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo.pdf
-[2025-01-25 22:38:50] info  - routes.js:60 - CLDFNC42P24G082R/anno/2025/2025-06-25-XXX-FSA-Prelievo.pdf
-[2025-01-25 22:53:19] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo.pdf
-[2025-01-25 22:54:54] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:55:19] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:55:38] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:55:50] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo.pdf
-[2025-01-25 22:55:51] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo_evidenziato.pdf
-[2025-01-25 22:55:54] info  - routes.js:60 - CLDFNC42P24G082R/anno/2025/2025-06-25-XXX-FSA-Prelievo.pdf
-[2025-01-25 22:56:16] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:56:20] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo.pdf
-[2025-01-25 22:56:22] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo_evidenziato.pdf
-[2025-01-25 22:56:28] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:56:31] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:56:45] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:56:51] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:56:52] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:56:56] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo.pdf
-[2025-01-25 22:57:11] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 22:57:18] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo.pdf
-[2025-01-25 22:57:19] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo_evidenziato.pdf
-[2025-01-25 23:10:22] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:10:23] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:10:30] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo.pdf
-[2025-01-25 23:10:38] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo_evidenziato.pdf
-[2025-01-25 23:10:40] info  - routes.js:60 - CLDFNC42P24G082R/anno/2025/2025-06-25-XXX-FSA-Prelievo.pdf
-[2025-01-25 23:11:29] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo.pdf
-[2025-01-25 23:11:52] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:12:05] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo.pdf
-[2025-01-25 23:12:49] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:13:02] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:13:05] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:13:17] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:13:22] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:13:34] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:13:37] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo.pdf
-[2025-01-25 23:14:06] info  - routes.js:60 - CLDFNC42P24G082R/anno/2025/2025-06-25-XXX-FSA-Prelievo.pdf
-[2025-01-25 23:20:42] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:20:51] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:21:10] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:21:36] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:23:36] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:25:35] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:28:53] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:31:09] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:31:59] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:32:04] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:32:09] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:32:14] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:32:16] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:32:17] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:32:23] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:32:26] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:32:30] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:45:53] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:46:11] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:46:13] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:47:37] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:56:05] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:56:24] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:56:27] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:56:43] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:56:46] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:56:48] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:56:53] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:56:57] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:56:59] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:57:01] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:57:12] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:57:13] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:57:19] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:57:20] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:57:27] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:57:28] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:57:44] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:57:52] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:57:54] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:57:59] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:58:06] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:58:08] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:58:09] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:58:10] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:58:11] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:58:18] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:59:34] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:59:35] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:59:36] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 23:59:44] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
+[2025-01-25 09:05:55] info  - server.js:7 - C:\Project\MyProject\FascicoloSanitario\NodeJsBE\environments
+[2025-01-25 09:05:55] info  - server.js:9 - work
+[2025-01-25 09:05:55] info  - server.js:10 - localhost
+[2025-01-25 09:05:55] info  - server.js:11 - 5000
+[2025-01-25 09:05:55] info  - server.js:41 - Server listening at http://localhost:5000
+[2025-01-25 09:05:55] info  - controllerDB.js:8 - Connected to the SQlite database.
+[2025-01-25 09:06:04] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
+[2025-01-25 09:06:07] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo.pdf
+[2025-01-25 09:06:09] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo_evidenziato.pdf
+[2025-01-25 09:06:11] info  - routes.js:60 - CLDFNC42P24G082R/anno/2025/2025-06-25-XXX-FSA-Prelievo.pdf
+[2025-01-25 09:06:14] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
+[2025-01-25 09:06:17] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo.pdf
+[2025-01-25 09:07:59] info  - routes.js:60 - CLDFNC42P24G082R/anno/2025/2025-06-25-XXX-FSA-Prelievo.pdf
+[2025-01-25 09:08:19] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo_evidenziato.pdf
+[2025-01-25 09:08:19] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo.pdf
+[2025-01-25 09:08:32] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo_evidenziato.pdf
+[2025-01-25 09:08:32] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo.pdf
+[2025-01-25 09:08:59] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo_evidenziato.pdf
+[2025-01-25 09:09:01] info  - routes.js:60 - CLDFNC42P24G082R/anno/2025/2025-06-25-XXX-FSA-Prelievo.pdf
+[2025-01-25 09:11:45] info  - controllerDB.js:8 - Connected to the SQlite database.
+[2025-01-25 09:11:45] info  - dbSqLite.js:17 - Connected to the SQlite database.
+[2025-01-25 09:11:47] error - uncaughtException: Cannot read properties of null (reading 'children')
+TypeError: Cannot read properties of null (reading 'children')
+    at Statement.<anonymous> (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\db\schemaDB.js:51:25)
+    at Statement.replacement (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\sqlite3\lib\trace.js:25:27)
+[2025-01-25 09:16:14] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo.pdf
+[2025-01-25 09:16:14] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo_evidenziato.pdf
+[2025-01-25 09:17:55] info  - controllerDB.js:8 - Connected to the SQlite database.
+[2025-01-25 09:17:55] info  - dbSqLite.js:17 - Connected to the SQlite database.
+[2025-01-25 09:17:57] info  - schemaDB.js:51 -  path:undefined/CLDFNC42P24G082R
+[2025-01-25 09:17:57] info  - schemaDB.js:52 -  list:null
+[2025-01-25 09:17:57] error - uncaughtException: Cannot read properties of null (reading 'children')
+TypeError: Cannot read properties of null (reading 'children')
+    at Statement.<anonymous> (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\db\schemaDB.js:53:25)
+    at Statement.replacement (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\sqlite3\lib\trace.js:25:27)
+[2025-01-25 09:18:47] info  - controllerDB.js:8 - Connected to the SQlite database.
+[2025-01-25 09:18:47] info  - dbSqLite.js:17 - Connected to the SQlite database.
+[2025-01-25 09:18:48] info  - schemaDB.js:51 -  path:undefined/CLDFNC42P24G082R
+[2025-01-25 09:18:48] info  - schemaDB.js:52 -  list:null
+[2025-01-25 09:19:19] info  - controllerDB.js:8 - Connected to the SQlite database.
+[2025-01-25 09:19:19] info  - dbSqLite.js:17 - Connected to the SQlite database.
+[2025-01-25 09:19:20] info  - schemaDB.js:51 -  path:undefined/CLDFNC42P24G082R
+[2025-01-25 09:19:20] info  - schemaDB.js:52 -  list:null
+[2025-01-25 09:19:20] info  - schemaDB.js:58 -  Nessun file trovato.
+[2025-01-25 09:20:05] info  - controllerDB.js:8 - Connected to the SQlite database.
+[2025-01-25 09:20:05] info  - dbSqLite.js:17 - Connected to the SQlite database.
+[2025-01-25 09:20:06] info  - schemaDB.js:51 -  path:undefined/CLDFNC42P24G082R
+[2025-01-25 09:20:06] info  - schemaDB.js:57 -  Nessun file trovato  
+ -> list:null
+[2025-01-25 09:20:50] info  - controllerDB.js:8 - Connected to the SQlite database.
+[2025-01-25 09:20:50] info  - dbSqLite.js:17 - Connected to the SQlite database.
+[2025-01-25 09:20:50] info  - schemaDB.js:51 -  path:undefined/CLDFNC42P24G082R
+[2025-01-25 09:20:50] info  - schemaDB.js:57 -  Nessun file trovato 
+ -> path:undefined/CLDFNC42P24G082R
+ -> list:null
+[2025-01-25 09:21:15] info  - controllerDB.js:8 - Connected to the SQlite database.
+[2025-01-25 09:21:15] info  - dbSqLite.js:17 - Connected to the SQlite database.
+[2025-01-25 09:21:16] info  - schemaDB.js:51 -  path:undefined/CLDFNC42P24G082R
+[2025-01-25 09:21:16] info  - schemaDB.js:57 -  Nessun file trovato 
+   -> path:undefined/CLDFNC42P24G082R
+   -> list:null
+[2025-01-25 09:25:00] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo.pdf
+[2025-01-25 09:25:01] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo_evidenziato.pdf
+[2025-01-25 09:31:02] info  - controllerDB.js:8 - Connected to the SQlite database.
+[2025-01-25 09:31:02] info  - dbSqLite.js:17 - Connected to the SQlite database.
+[2025-01-25 09:31:04] info  - schemaDB.js:56 -  Nessun file trovato 
+   -> path:undefined/CLDFNC42P24G082R
+   -> list:null
+[2025-01-25 09:32:08] info  - controllerDB.js:8 - Connected to the SQlite database.
+[2025-01-25 09:32:08] info  - dbSqLite.js:17 - Connected to the SQlite database.
+[2025-01-25 09:33:47] info  - controllerDB.js:8 - Connected to the SQlite database.
+[2025-01-25 09:33:47] info  - dbSqLite.js:17 - Connected to the SQlite database.
+[2025-01-25 09:33:48] info  - schemaDB.js:25 - insert into TBL_FS  values ('CLDFNC42P24G082R','2024-06-25-XXX-FSA-Prelievo.pdf', 'CLDFNC42P24G082R/anno/2024', '2024',   DATE('now'),'XXX','FSA')
+[2025-01-25 09:33:48] info  - schemaDB.js:25 - insert into TBL_FS  values ('CLDFNC42P24G082R','2024-06-25-XXX-FSA-Prelievo_evidenziato.pdf', 'CLDFNC42P24G082R/anno/2024', '2024',   DATE('now'),'XXX','FSA')
+[2025-01-25 09:33:48] info  - schemaDB.js:25 - insert into TBL_FS  values ('CLDFNC42P24G082R','2025-06-25-XXX-FSA-Prelievo.pdf', 'CLDFNC42P24G082R/anno/2025', '2025',   DATE('now'),'XXX','FSA')
+[2025-01-25 09:33:48] info  - schemaDB.js:30 -  esito :OK
+[2025-01-25 09:33:48] info  - schemaDB.js:30 -  esito :OK
+[2025-01-25 09:33:48] info  - schemaDB.js:30 -  esito :OK
+[2025-01-25 09:42:47] info  - controllerDB.js:8 - Connected to the SQlite database.
+[2025-01-25 09:42:47] info  - dbSqLite.js:17 - Connected to the SQlite database.
+[2025-01-25 09:42:49] info  - schemaDB.js:56 -  Nessun file trovato 
+   -> path:undefined/CLDFNC42P24G082R
+   -> list:null
+[2025-01-25 09:45:08] info  - controllerDB.js:8 - Connected to the SQlite database.
+[2025-01-25 09:45:08] info  - dbSqLite.js:17 - Connected to the SQlite database.
+[2025-01-25 09:45:10] info  - schemaDB.js:25 - insert into TBL_FS  values ('CLDFNC42P24G082R','2024-06-25-XXX-FSA-Prelievo.pdf', 'CLDFNC42P24G082R/anno/2024', '2024',   DATE('now'),'XXX','FSA')
+[2025-01-25 09:45:10] info  - schemaDB.js:25 - insert into TBL_FS  values ('CLDFNC42P24G082R','2024-06-25-XXX-FSA-Prelievo_evidenziato.pdf', 'CLDFNC42P24G082R/anno/2024', '2024',   DATE('now'),'XXX','FSA')
+[2025-01-25 09:45:10] info  - schemaDB.js:25 - insert into TBL_FS  values ('CLDFNC42P24G082R','2025-06-25-XXX-FSA-Prelievo.pdf', 'CLDFNC42P24G082R/anno/2025', '2025',   DATE('now'),'XXX','FSA')
+[2025-01-25 09:45:10] info  - schemaDB.js:30 -  esito :OK
+[2025-01-25 09:45:10] info  - schemaDB.js:30 -  esito :OK
+[2025-01-25 09:45:10] info  - schemaDB.js:30 -  esito :OK
+[2025-01-25 09:45:57] info  - controllerDB.js:8 - Connected to the SQlite database.
+[2025-01-25 09:45:57] info  - dbSqLite.js:17 - Connected to the SQlite database.
+[2025-01-25 09:45:59] info  - schemaDB.js:25 - insert into TBL_FS  values ('CLDFNC42P24G082R','2024-06-25-XXX-FSA-Prelievo.pdf', 'CLDFNC42P24G082R/anno/2024', '2024',   DATE('now'),'XXX','FSA')
+[2025-01-25 09:45:59] info  - schemaDB.js:25 - insert into TBL_FS  values ('CLDFNC42P24G082R','2024-06-25-XXX-FSA-Prelievo_evidenziato.pdf', 'CLDFNC42P24G082R/anno/2024', '2024',   DATE('now'),'XXX','FSA')
+[2025-01-25 09:45:59] info  - schemaDB.js:25 - insert into TBL_FS  values ('CLDFNC42P24G082R','2025-06-25-XXX-FSA-Prelievo.pdf', 'CLDFNC42P24G082R/anno/2025', '2025',   DATE('now'),'XXX','FSA')
+[2025-01-25 09:45:59] info  - schemaDB.js:30 -  esito :OK
+[2025-01-25 09:45:59] info  - schemaDB.js:30 -  esito :OK
+[2025-01-25 09:45:59] info  - schemaDB.js:30 -  esito :OK
