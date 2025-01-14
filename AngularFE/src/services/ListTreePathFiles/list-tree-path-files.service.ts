@@ -12,7 +12,7 @@ export class ListTreePathFilesService {
 
   getListDirFile(): any {
     const headers = {  };
-    return this.http.get<any>(config.serverURL+ 'api/listDirFile', headers );
+    return this.http.get<any>(config.serverURL+ '/api/listDirFile', headers );
 
   }
 
@@ -20,12 +20,12 @@ export class ListTreePathFilesService {
   getListDirTree(): any {
     const headers = {  };
     console.log( 'start getList');
-    return this.http.get<any>(config.serverURL+ 'api/listDirTree', headers )
+    return this.http.get<any>(config.serverURL+ '/api/listDirTree', headers )
 
   }
   getSqlListDirFile(): any {
     const headers = {  };
-    return this.http.get<any>(config.serverURL+ 'sql/listDirFile', headers );
+    return this.http.get<any>(config.serverURL+ '/sql/listDirFile', headers );
 
   }
 
