@@ -1,4 +1,4 @@
-const logger = require('../Logger');
+const logger = require('../utils/Logger');
 TBL_FS = 'TBL_FS3'
 const script_DB_TBL_FS = `
     CREATE TABLE ${TBL_FS} (

@@ -1,7 +1,7 @@
 var cfg = require('../config');
 const fs = require('fs');
 
-const logger = require('../Logger');
+const logger = require('../utils/Logger');
 
 
 

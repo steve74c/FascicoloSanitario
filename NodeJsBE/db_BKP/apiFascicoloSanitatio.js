@@ -1,5 +1,5 @@
 //const sqlite3 = require('sqlite-wasm');
-const logger = require('../Logger');
+const logger = require('../utils/Logger');
 
 
 TBL_FS = 'TBL_FS'

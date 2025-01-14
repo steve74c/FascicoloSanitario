@@ -1,99 +1,75 @@
-[2025-01-25 09:05:55] info  - server.js:7 - C:\Project\MyProject\FascicoloSanitario\NodeJsBE\environments
-[2025-01-25 09:05:55] info  - server.js:9 - work
-[2025-01-25 09:05:55] info  - server.js:10 - localhost
-[2025-01-25 09:05:55] info  - server.js:11 - 5000
-[2025-01-25 09:05:55] info  - server.js:41 - Server listening at http://localhost:5000
-[2025-01-25 09:05:55] info  - controllerDB.js:8 - Connected to the SQlite database.
-[2025-01-25 09:06:04] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 09:06:07] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo.pdf
-[2025-01-25 09:06:09] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo_evidenziato.pdf
-[2025-01-25 09:06:11] info  - routes.js:60 - CLDFNC42P24G082R/anno/2025/2025-06-25-XXX-FSA-Prelievo.pdf
-[2025-01-25 09:06:14] info  - controllerDB.js:34 -  select * from TBL_FS where cod_fiscale = upper('CLDFNC42P24G082R'); 
-[2025-01-25 09:06:17] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo.pdf
-[2025-01-25 09:07:59] info  - routes.js:60 - CLDFNC42P24G082R/anno/2025/2025-06-25-XXX-FSA-Prelievo.pdf
-[2025-01-25 09:08:19] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo_evidenziato.pdf
-[2025-01-25 09:08:19] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo.pdf
-[2025-01-25 09:08:32] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo_evidenziato.pdf
-[2025-01-25 09:08:32] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo.pdf
-[2025-01-25 09:08:59] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo_evidenziato.pdf
-[2025-01-25 09:09:01] info  - routes.js:60 - CLDFNC42P24G082R/anno/2025/2025-06-25-XXX-FSA-Prelievo.pdf
-[2025-01-25 09:11:45] info  - controllerDB.js:8 - Connected to the SQlite database.
-[2025-01-25 09:11:45] info  - dbSqLite.js:17 - Connected to the SQlite database.
-[2025-01-25 09:11:47] error - uncaughtException: Cannot read properties of null (reading 'children')
-TypeError: Cannot read properties of null (reading 'children')
-    at Statement.<anonymous> (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\db\schemaDB.js:51:25)
-    at Statement.replacement (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\sqlite3\lib\trace.js:25:27)
-[2025-01-25 09:16:14] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo.pdf
-[2025-01-25 09:16:14] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo_evidenziato.pdf
-[2025-01-25 09:17:55] info  - controllerDB.js:8 - Connected to the SQlite database.
-[2025-01-25 09:17:55] info  - dbSqLite.js:17 - Connected to the SQlite database.
-[2025-01-25 09:17:57] info  - schemaDB.js:51 -  path:undefined/CLDFNC42P24G082R
-[2025-01-25 09:17:57] info  - schemaDB.js:52 -  list:null
-[2025-01-25 09:17:57] error - uncaughtException: Cannot read properties of null (reading 'children')
-TypeError: Cannot read properties of null (reading 'children')
-    at Statement.<anonymous> (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\db\schemaDB.js:53:25)
-    at Statement.replacement (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\node_modules\sqlite3\lib\trace.js:25:27)
-[2025-01-25 09:18:47] info  - controllerDB.js:8 - Connected to the SQlite database.
-[2025-01-25 09:18:47] info  - dbSqLite.js:17 - Connected to the SQlite database.
-[2025-01-25 09:18:48] info  - schemaDB.js:51 -  path:undefined/CLDFNC42P24G082R
-[2025-01-25 09:18:48] info  - schemaDB.js:52 -  list:null
-[2025-01-25 09:19:19] info  - controllerDB.js:8 - Connected to the SQlite database.
-[2025-01-25 09:19:19] info  - dbSqLite.js:17 - Connected to the SQlite database.
-[2025-01-25 09:19:20] info  - schemaDB.js:51 -  path:undefined/CLDFNC42P24G082R
-[2025-01-25 09:19:20] info  - schemaDB.js:52 -  list:null
-[2025-01-25 09:19:20] info  - schemaDB.js:58 -  Nessun file trovato.
-[2025-01-25 09:20:05] info  - controllerDB.js:8 - Connected to the SQlite database.
-[2025-01-25 09:20:05] info  - dbSqLite.js:17 - Connected to the SQlite database.
-[2025-01-25 09:20:06] info  - schemaDB.js:51 -  path:undefined/CLDFNC42P24G082R
-[2025-01-25 09:20:06] info  - schemaDB.js:57 -  Nessun file trovato  
- -> list:null
-[2025-01-25 09:20:50] info  - controllerDB.js:8 - Connected to the SQlite database.
-[2025-01-25 09:20:50] info  - dbSqLite.js:17 - Connected to the SQlite database.
-[2025-01-25 09:20:50] info  - schemaDB.js:51 -  path:undefined/CLDFNC42P24G082R
-[2025-01-25 09:20:50] info  - schemaDB.js:57 -  Nessun file trovato 
- -> path:undefined/CLDFNC42P24G082R
- -> list:null
-[2025-01-25 09:21:15] info  - controllerDB.js:8 - Connected to the SQlite database.
-[2025-01-25 09:21:15] info  - dbSqLite.js:17 - Connected to the SQlite database.
-[2025-01-25 09:21:16] info  - schemaDB.js:51 -  path:undefined/CLDFNC42P24G082R
-[2025-01-25 09:21:16] info  - schemaDB.js:57 -  Nessun file trovato 
-   -> path:undefined/CLDFNC42P24G082R
-   -> list:null
-[2025-01-25 09:25:00] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo.pdf
-[2025-01-25 09:25:01] info  - routes.js:60 - CLDFNC42P24G082R/anno/2024/2024-06-25-XXX-FSA-Prelievo_evidenziato.pdf
-[2025-01-25 09:31:02] info  - controllerDB.js:8 - Connected to the SQlite database.
-[2025-01-25 09:31:02] info  - dbSqLite.js:17 - Connected to the SQlite database.
-[2025-01-25 09:31:04] info  - schemaDB.js:56 -  Nessun file trovato 
-   -> path:undefined/CLDFNC42P24G082R
-   -> list:null
-[2025-01-25 09:32:08] info  - controllerDB.js:8 - Connected to the SQlite database.
-[2025-01-25 09:32:08] info  - dbSqLite.js:17 - Connected to the SQlite database.
-[2025-01-25 09:33:47] info  - controllerDB.js:8 - Connected to the SQlite database.
-[2025-01-25 09:33:47] info  - dbSqLite.js:17 - Connected to the SQlite database.
-[2025-01-25 09:33:48] info  - schemaDB.js:25 - insert into TBL_FS  values ('CLDFNC42P24G082R','2024-06-25-XXX-FSA-Prelievo.pdf', 'CLDFNC42P24G082R/anno/2024', '2024',   DATE('now'),'XXX','FSA')
-[2025-01-25 09:33:48] info  - schemaDB.js:25 - insert into TBL_FS  values ('CLDFNC42P24G082R','2024-06-25-XXX-FSA-Prelievo_evidenziato.pdf', 'CLDFNC42P24G082R/anno/2024', '2024',   DATE('now'),'XXX','FSA')
-[2025-01-25 09:33:48] info  - schemaDB.js:25 - insert into TBL_FS  values ('CLDFNC42P24G082R','2025-06-25-XXX-FSA-Prelievo.pdf', 'CLDFNC42P24G082R/anno/2025', '2025',   DATE('now'),'XXX','FSA')
-[2025-01-25 09:33:48] info  - schemaDB.js:30 -  esito :OK
-[2025-01-25 09:33:48] info  - schemaDB.js:30 -  esito :OK
-[2025-01-25 09:33:48] info  - schemaDB.js:30 -  esito :OK
-[2025-01-25 09:42:47] info  - controllerDB.js:8 - Connected to the SQlite database.
-[2025-01-25 09:42:47] info  - dbSqLite.js:17 - Connected to the SQlite database.
-[2025-01-25 09:42:49] info  - schemaDB.js:56 -  Nessun file trovato 
-   -> path:undefined/CLDFNC42P24G082R
-   -> list:null
-[2025-01-25 09:45:08] info  - controllerDB.js:8 - Connected to the SQlite database.
-[2025-01-25 09:45:08] info  - dbSqLite.js:17 - Connected to the SQlite database.
-[2025-01-25 09:45:10] info  - schemaDB.js:25 - insert into TBL_FS  values ('CLDFNC42P24G082R','2024-06-25-XXX-FSA-Prelievo.pdf', 'CLDFNC42P24G082R/anno/2024', '2024',   DATE('now'),'XXX','FSA')
-[2025-01-25 09:45:10] info  - schemaDB.js:25 - insert into TBL_FS  values ('CLDFNC42P24G082R','2024-06-25-XXX-FSA-Prelievo_evidenziato.pdf', 'CLDFNC42P24G082R/anno/2024', '2024',   DATE('now'),'XXX','FSA')
-[2025-01-25 09:45:10] info  - schemaDB.js:25 - insert into TBL_FS  values ('CLDFNC42P24G082R','2025-06-25-XXX-FSA-Prelievo.pdf', 'CLDFNC42P24G082R/anno/2025', '2025',   DATE('now'),'XXX','FSA')
-[2025-01-25 09:45:10] info  - schemaDB.js:30 -  esito :OK
-[2025-01-25 09:45:10] info  - schemaDB.js:30 -  esito :OK
-[2025-01-25 09:45:10] info  - schemaDB.js:30 -  esito :OK
-[2025-01-25 09:45:57] info  - controllerDB.js:8 - Connected to the SQlite database.
-[2025-01-25 09:45:57] info  - dbSqLite.js:17 - Connected to the SQlite database.
-[2025-01-25 09:45:59] info  - schemaDB.js:25 - insert into TBL_FS  values ('CLDFNC42P24G082R','2024-06-25-XXX-FSA-Prelievo.pdf', 'CLDFNC42P24G082R/anno/2024', '2024',   DATE('now'),'XXX','FSA')
-[2025-01-25 09:45:59] info  - schemaDB.js:25 - insert into TBL_FS  values ('CLDFNC42P24G082R','2024-06-25-XXX-FSA-Prelievo_evidenziato.pdf', 'CLDFNC42P24G082R/anno/2024', '2024',   DATE('now'),'XXX','FSA')
-[2025-01-25 09:45:59] info  - schemaDB.js:25 - insert into TBL_FS  values ('CLDFNC42P24G082R','2025-06-25-XXX-FSA-Prelievo.pdf', 'CLDFNC42P24G082R/anno/2025', '2025',   DATE('now'),'XXX','FSA')
-[2025-01-25 09:45:59] info  - schemaDB.js:30 -  esito :OK
-[2025-01-25 09:45:59] info  - schemaDB.js:30 -  esito :OK
-[2025-01-25 09:45:59] info  - schemaDB.js:30 -  esito :OK
+[2025-01-25 08:47:53] error - uncaughtException: Cannot find module '../Logger'
+Require stack:
+- C:\Project\MyProject\FascicoloSanitario\NodeJsBE\controller\controllerShellFile.js
+- C:\Project\MyProject\FascicoloSanitario\NodeJsBE\routes.js
+- C:\Project\MyProject\FascicoloSanitario\NodeJsBE\server.js
+Error: Cannot find module '../Logger'
+Require stack:
+- C:\Project\MyProject\FascicoloSanitario\NodeJsBE\controller\controllerShellFile.js
+- C:\Project\MyProject\FascicoloSanitario\NodeJsBE\routes.js
+- C:\Project\MyProject\FascicoloSanitario\NodeJsBE\server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Module._load (node:internal/modules/cjs/loader:986:27)
+    at Module.require (node:internal/modules/cjs/loader:1233:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\controller\controllerShellFile.js:5:16)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Module.require (node:internal/modules/cjs/loader:1233:19)
+[2025-01-25 08:49:44] error - uncaughtException: Cannot find module '../Logger'
+Require stack:
+- C:\Project\MyProject\FascicoloSanitario\NodeJsBE\utils\pathToJsonTree.js
+- C:\Project\MyProject\FascicoloSanitario\NodeJsBE\routes.js
+- C:\Project\MyProject\FascicoloSanitario\NodeJsBE\server.js
+Error: Cannot find module '../Logger'
+Require stack:
+- C:\Project\MyProject\FascicoloSanitario\NodeJsBE\utils\pathToJsonTree.js
+- C:\Project\MyProject\FascicoloSanitario\NodeJsBE\routes.js
+- C:\Project\MyProject\FascicoloSanitario\NodeJsBE\server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Module._load (node:internal/modules/cjs/loader:986:27)
+    at Module.require (node:internal/modules/cjs/loader:1233:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\utils\pathToJsonTree.js:2:16)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Module.require (node:internal/modules/cjs/loader:1233:19)
+[2025-01-25 08:50:15] error - uncaughtException: Cannot find module '../Logger'
+Require stack:
+- C:\Project\MyProject\FascicoloSanitario\NodeJsBE\controller\controllerDB.js
+- C:\Project\MyProject\FascicoloSanitario\NodeJsBE\routes.js
+- C:\Project\MyProject\FascicoloSanitario\NodeJsBE\server.js
+Error: Cannot find module '../Logger'
+Require stack:
+- C:\Project\MyProject\FascicoloSanitario\NodeJsBE\controller\controllerDB.js
+- C:\Project\MyProject\FascicoloSanitario\NodeJsBE\routes.js
+- C:\Project\MyProject\FascicoloSanitario\NodeJsBE\server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Module._load (node:internal/modules/cjs/loader:986:27)
+    at Module.require (node:internal/modules/cjs/loader:1233:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (C:\Project\MyProject\FascicoloSanitario\NodeJsBE\controller\controllerDB.js:1:16)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Module.require (node:internal/modules/cjs/loader:1233:19)
+[2025-01-25 08:50:32] info  - server.js:7 - C:\Project\MyProject\FascicoloSanitario\NodeJsBE\environments
+[2025-01-25 08:50:32] info  - server.js:9 - work
+[2025-01-25 08:50:32] info  - server.js:10 - localhost
+[2025-01-25 08:50:32] info  - server.js:11 - 5000
+[2025-01-25 08:50:32] info  - server.js:41 - Server listening at http://localhost:5000
+[2025-01-25 08:50:32] error - uncaughtException: SQLITE_CANTOPEN: unable to open database file
+Error: SQLITE_CANTOPEN: unable to open database file
+[2025-01-25 08:50:32] error - controllerDB.js:7 - SQLITE_CANTOPEN: unable to open database file
+[2025-01-25 08:50:32] info  - controllerDB.js:8 - Connected to the SQlite database.
+[2025-01-25 08:51:06] info  - server.js:7 - C:\Project\MyProject\FascicoloSanitario\NodeJsBE\environments
+[2025-01-25 08:51:06] info  - server.js:9 - work
+[2025-01-25 08:51:06] info  - server.js:10 - localhost
+[2025-01-25 08:51:06] info  - server.js:11 - 5000
+[2025-01-25 08:51:06] info  - server.js:41 - Server listening at http://localhost:5000
+[2025-01-25 08:51:06] info  - controllerDB.js:8 - Connected to the SQlite database.

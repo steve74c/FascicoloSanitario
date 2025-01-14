@@ -2,7 +2,7 @@
     Legge i file dalla directory e 
     riporta un json con le info di ogni file
   -------------------------------------------------------*/
-const logger = require("../Logger");
+  const logger = require('../utils/Logger');
 const dree = require('dree');
 
 const headerDict = {

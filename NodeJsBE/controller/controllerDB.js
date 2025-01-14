@@ -1,4 +1,4 @@
-const logger = require("../Logger");
+const logger = require('../utils/Logger');
 const cfg = require('../config');
 const sqlite3 = require('sqlite3').verbose();
 

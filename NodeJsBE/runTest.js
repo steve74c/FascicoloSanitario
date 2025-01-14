@@ -68,7 +68,7 @@ readline.question('Seleziona test?  ' +
   console.log(`\nTest selezionato ${test}!`);
   readline.close();
 
-  const db = new sqlite3.Database('./db/dbFacicoloSanitario.db');
+  const db = new sqlite3.Database(cfg.PATH_DB);
   switch(test) {
     case  menu[0].id:  // 'exit'
       process.exitCode = 0;
