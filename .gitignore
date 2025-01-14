@@ -1,9 +1,16 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 
+# ignore all logs
+*.log
+
 # file log
 AngularFE/log
 /AngularFE/log
+NodeJsBE/logs/*
+**/NodeJsBE/logs/*
+
+
 
 # file config
 run.bat
