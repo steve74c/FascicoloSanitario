@@ -9,6 +9,7 @@ logger.info(__dirname + '\\environments')
 logger.info(config.NODE_ENV);
 logger.info(config.HOST);
 logger.info(config.PORT);
+logger.info('path DB:' + config.PATH_DB);
 
 
 // Costanti

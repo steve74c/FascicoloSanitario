@@ -5,7 +5,7 @@ const path = require('path');
 
 
 dotenv.config({
-    path: path.resolve(__dirname + '\\environments', `${process.env.NODE_ENV}.env`)
+    path: path.resolve(__dirname + '/environments', `${process.env.NODE_ENV}.env`)
 });
 
 const homedir = __dirname;
@@ -18,6 +18,6 @@ module.exports = {
     HOME_PATH_DOC    : process.env.HOME_PATH_DOC,     
     //HOME_PATH_DOC    : process.env.HOME_PATH_DOC    || 'C:\\Project\\MyProject\\DOC',     
     PATH_CONFIG      : __dirname,  
-    PATH_DB          : homedir+ "\db",  
+    PATH_DB          : homedir+ "/db/" + process.env.DB_PATH_ENV + "/dbFacicoloSanitario.db",  
 
 }

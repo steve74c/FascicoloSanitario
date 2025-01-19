@@ -1,1 +1,1 @@
-node --env-file=environments/work.env runTest.js
+node --env-file=environments/home.env runTest.js
