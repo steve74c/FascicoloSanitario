@@ -1,7 +1,7 @@
 // routes.js
 const express = require('express')
 const router = express.Router()
-const logger = require('./Logger');
+const logger = require('./utils/Logger');
 
 const ctrlShFile = require("./controller/controllerShellFile");
 const ctrlPdfFile = require("./controller/controllerBase64");
@@ -23,7 +23,7 @@ const arr_uri = { 'HELLO'             : '/hello',
                   'SQL-LIST_DIR_TREE' : '/sql/listDirFile'
 };
 
-const db = new sqlite3.Database('./db/dbFacicoloSanitario.db');
+const db = new sqlite3.Database(cfg.PATH_DB);
 
 router.get(arr_uri['HELLO'],  (request, response) => response.json({ message: "Hello from server!" }));
 router.get(arr_uri['LISTFILE'], (request, response) => fnPath(request, response));

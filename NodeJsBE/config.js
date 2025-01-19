@@ -1,4 +1,4 @@
-const logger = require('./Logger');
+const logger = require('./utils/Logger');
 const dotenv = require('dotenv');
 const path = require('path');
 
@@ -19,5 +19,4 @@ module.exports = {
     //HOME_PATH_DOC    : process.env.HOME_PATH_DOC    || 'C:\\Project\\MyProject\\DOC',     
     PATH_CONFIG      : __dirname,  
     PATH_DB          : homedir+ "/db/" + process.env.DB_PATH_ENV + "/dbFacicoloSanitario.db",  
-
 }

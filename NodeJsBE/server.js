@@ -1,7 +1,7 @@
 const config =  require('./config.js');
 const express = require('express')
 const routes = require('./routes');
-const logger = require('./Logger');
+const logger = require('./utils/Logger');
 
 
 logger.info(__dirname + '\\environments')

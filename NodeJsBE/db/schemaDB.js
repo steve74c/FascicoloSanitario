@@ -1,6 +1,6 @@
 // Require or import the dependencies
 const fs = require('fs');
-const logger = require('../Logger');
+const logger = require('../utils/Logger');
 const ctrlShFile = require("../controller/controllerShellFile");
 const cfg = require('../config');
 

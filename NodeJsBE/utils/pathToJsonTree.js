@@ -1,5 +1,5 @@
 
-const logger = require("../Logger");
+const logger = require('../utils/Logger');
 class Node {
     constructor(name, parentName, relativePath,type,extension,children=new Array([]), expanded = false) {
         this.name = name;
