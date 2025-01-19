@@ -4,62 +4,7 @@
 # ignore all logs
 **/logs
 
-# file log
-AngularFE/log
-/AngularFE/log
-NodeJsBE/logs/*
-**/NodeJsBE/logs/*
-/NodeJsBE/logs/*
-
-
-# file config
-run.bat
-
-# compiled output
-/AngularFE/dist
-/AngularFE//tmp
-/AngularFE//out-tsc
-# Only exists if Bazel was run
-/AngularFE//bazel-out
-
 # dependencies
 AngularFE/.angular/
-/AngularFE//node_modules
 AngularFE/node_modules/
-/NodeJsBE//node_modules
 NodeJsBE/node_modules/
-
-# profiling files
-chrome-profiler-events*.json
-
-# IDEs and editors
-/AngularFE/.idea
-/AngularFE/.project
-/AngularFE/.classpath
-/AngularFE/.c9/
-/AngularFE/*.launch
-/AngularFE/.settings/
-/AngularFE/*.sublime-workspace
-
-# IDE - VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-.history/*
-
-# misc
-/.sass-cache
-/connect.lock
-/coverage
-/libpeerconnection.log
-npm-debug.log
-yarn-error.log
-testem.log
-/typings
-
-# System Files
-.DS_Store
-Thumbs.db
-
