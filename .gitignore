@@ -2,13 +2,14 @@
 
 
 # ignore all logs
-*.log
+**/logs
 
 # file log
 AngularFE/log
 /AngularFE/log
 NodeJsBE/logs/*
 **/NodeJsBE/logs/*
+/NodeJsBE/logs/*
 
 
 
