@@ -29,11 +29,14 @@ convertFileToBase64 = (filePath ) => {
 
 exports.base64_encode = (req, res) => {
     try {
-
+/*
         system_path = cfg.HOME_PATH_DOC;
-        if (cfg.OPERATING_SYSTEM="WINDOWS") {
+        if (cfg.OPERATING_SYSTEM="WINDOWS") 
                 system_path =  system_path + '\\' + req.body.path.replace(new RegExp('/','g'),"\\");
-        }   
+        else
+*/        
+            system_path =  cfg.HOME_PATH_DOC + '/' + req.body.path;
+
          return convertFileToBase64(system_path);
     }  catch (error) {
           logger.error(error);

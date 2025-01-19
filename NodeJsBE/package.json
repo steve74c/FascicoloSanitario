@@ -5,10 +5,11 @@
   "description": "Raccoglie tutti gli esami fatti delle persone",
   "main": "server.js",
   "scripts": {
-    "dev": "set NODE_ENV=development&& node server.js",
-    "prod": "set NODE_ENV=production&& node server.js",
-    "home": "set NODE_ENV=home&& node server.js",
-    "work": "set NODE_ENV=work&& node server.js"
+    "dev"   : "set NODE_ENV=development&& node server.js",
+    "prod"  : "set NODE_ENV=production&& node server.js",
+    "home"  : "set NODE_ENV=home&& node server.js",
+    "work"  : "set NODE_ENV=work&& node server.js",
+    "ubuntu": "NODE_ENV=ubuntu node server.js"
   },
   "dependencies": {
     "@sqlite.org/sqlite-wasm": "^3.47.2-build1",
