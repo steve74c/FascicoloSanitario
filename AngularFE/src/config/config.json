@@ -1,4 +1,4 @@
 {
-  "serverURL" : "http://localhost:5000",
+  "serverURL" : "http://192.168.178.83:5000",
   "version": "1.0,0.0"
 }
